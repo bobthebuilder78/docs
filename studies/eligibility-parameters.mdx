@@ -1,73 +1,40 @@
 ---
 title: "Configure Eligibility Parameters for a Study"
 sidebarTitle: "Parameters"
-description: "Build inclusion and exclusion criteria from 4,000+ conditions, medications, and numeric fields. Use boolean logic to combine rules and refine your volunteer pool."
+description: "Build inclusion and exclusion criteria from conditions, medications, and structured fields like age or lab values. Learn how ordinary rules and groups combine."
 ---
 
-Jaspari Studies lets you define exactly who qualifies for your research. You select from a library of more than 4,000 conditions, medications, and numeric criteria, then combine them with boolean logic so only the right volunteers are surfaced to your sites.
+Jaspari Studies lets you define who qualifies for your research using conditions, medications, and structured criteria, combined with a specific set of rules for how they interact — not free-form boolean logic.
 
-## Parameter Types
-
-Eligibility rules fall into three categories. You can mix and match all three in a single study.
-
-<Tabs>
-  <Tab title="Medical Conditions">
-    Choose from a curated list of diagnoses and health histories. Examples include Type 2 diabetes, hypertension, asthma, and prior myocardial infarction. Each condition can be used as an inclusion criterion (volunteer must have it) or an exclusion criterion (volunteer must not have it).
-  </Tab>
-  <Tab title="Medications">
-    Select current or prior prescriptions from the same library. You can require that a volunteer is on a specific drug, has never taken it, or has used it within a defined window. This is useful for washout rules or concomitant medication checks.
-  </Tab>
-  <Tab title="Numeric Criteria">
-    Set ranges for age, BMI, lab values, or other continuous measures. Define minimums, maximums, or both. Numeric criteria are evaluated against the values volunteers provide during screening, so only those inside your range proceed.
-  </Tab>
-</Tabs>
-
-## Boolean Logic
-
-Simple lists of criteria are not always enough. Jaspari Studies supports boolean expressions so you can model complex protocols exactly.
-
-Use `AND`, `OR`, and `NOT` to combine rules. Group expressions with parentheses to control precedence.
-
-```text
-(Type 2 diabetes AND metformin) OR (Type 2 diabetes AND NOT prior insulin)
-```
-
-This expression captures volunteers who:
-
-- have Type 2 diabetes and are currently taking metformin, **or**
-- have Type 2 diabetes and have **never** been on insulin
-
-You can nest groups as deeply as your protocol requires. The platform evaluates the full expression against each volunteer's profile in real time.
-
-Eligibility parameters determine whether a volunteer qualifies for your study. Getting them right means volunteers who reach screening have already cleared the criteria that matter, and volunteers who don't qualify are never sent through a screening they can't pass.
-
-## Amending Parameters Mid-Study What you can build criteria from
+## What you can build criteria from
 
 - **Conditions** — diagnosed conditions and disease history.
 - **Medications** — current or prior medication use.
 - **Structured criteria** — age, lab values, BMI, prior diagnoses, and other numeric or categorical fields, built with the eligibility rule builder.
 
+Each of these can be used as an inclusion rule (a volunteer must have it) or an exclusion rule (a volunteer must not have it).
+
 ## How rules combine
 
-This is the part worth understanding before you add rules, since it isn't arbitrary boolean logic. It works like this:
+This is the part worth understanding before you add rules — it isn't arbitrary boolean logic. It works like this:
 
 <Steps>
   <Step title="Ordinary rules of the same type mean 'any one of these'">
     Add Albuterol, Fluticasone, and Symbicort as three ordinary medication rules, with no grouping action taken, and a volunteer qualifies by being on any one of them. The same default applies to condition rules.
   </Step>
   <Step title="Group when you need more than one at once">
-    If you specifically need a volunteer on more than one item at the same time, for example both Drug A and Drug B, select those rules and choose "Group rules" then "Match ALL."
+    If you specifically need a volunteer on more than one item at the same time — for example both Drug A and Drug B — select those rules and choose "Group rules" then "Match ALL."
   </Step>
-  <Step title="Exclusion rules always disqualify independently">
-    Every exclusion rule stands on its own, regardless of how your inclusion rules are grouped. A volunteer who matches even one exclusion rule is disqualified, full stop.
+  <Step title="Exclusion rules always apply on their own">
+    Every exclusion rule stands independently, regardless of how your inclusion rules are grouped. A volunteer who meets even one exclusion rule doesn't move forward, no matter what else they match.
   </Step>
-  <Step title="Everything is AND'd together at the top level">
+  <Step title="Everything is combined together at the top level">
     Your ungrouped medication pool, your ungrouped condition pool, any explicit groups, and your structured criteria (age, lab values, and so on) all have to pass together. A volunteer has to clear every category you've configured, not just one.
   </Step>
 </Steps>
 
 <Note>
-  The rule builder shows a live summary sentence describing exactly what you've configured as you add and group rules. Trust that sentence. It reflects the actual matching logic, not an approximation of it.
+  The rule builder shows a live summary sentence describing exactly what you've configured as you add and group rules. Trust that sentence — it reflects the actual matching logic, not an approximation of it.
 </Note>
 
 ## Adding parameters to a study
@@ -83,30 +50,18 @@ This is the part worth understanding before you add rules, since it isn't arbitr
     For structured criteria like age or a lab value, set the range or threshold you need.
   </Step>
   <Step title="Group only if you need to require more than one item at once">
-    Otherwise, leave rules ungrouped, since that already means "any one of these" for conditions and medications.
+    Otherwise, leave rules ungrouped — that already means "any one of these" for conditions and medications.
   </Step>
 </Steps>
 
 ## Changing eligibility mid-study
 
-You can update eligibility rules any time a study is in draft, active, or paused. Changes apply to matching going forward.
+You can update eligibility rules any time a study is in draft, active, or paused. Saving replaces your full set of rules with the new one — it isn't a partial edit, so double-check the complete rule list before saving, not just the rule you just added.
 
 <Warning>
-  A volunteer already matched or screened under the prior version of your criteria stays governed by that version, not the amended one. This keeps an accurate record of exactly which criteria applied to each volunteer, and it isn't retroactive: don't expect previously matched volunteers to be re-evaluated against updated criteria.
+  Updated rules apply going forward. A volunteer with an eligibility form already open when you make a change will be evaluated against whatever rules are live at the moment they submit — not a frozen snapshot from when their form was sent.
 </Warning>
-
-Protocols change. When you update eligibility parameters on an active study, the new rules apply to all future screening evaluations. Volunteers who were already qualified remain qualified unless your protocol requires re-screening.
-
-<Note>
-  Prior versions of your eligibility configuration are preserved automatically. If a sponsor or auditor asks what criteria were in effect on a specific date, you can reference the historical version from your study timeline.
-</Note>
-
-To amend parameters, open the study, go to the Eligibility section, edit the rules, and save. There is no need to pause recruitment unless your IRB or protocol explicitly requires it.
 
 ## Before you can launch
 
 Every rule group needs an explicit any-of or all-of choice set before the study can move out of draft. This is checked once, at launch, not on every subsequent save.
-
-<Accordion title="What if my criteria are unusually complex?">
-  Most studies configure successfully with ordinary rules and a handful of explicit groups. If your protocol needs logic beyond "any one of these" combined with a few "match ALL" groups, for example scoring models or interdependent thresholds, contact support before you begin setup so the team can assess it with you.
-</Accordion>

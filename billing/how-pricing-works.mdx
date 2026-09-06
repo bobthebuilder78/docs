@@ -1,65 +1,47 @@
 ---
 title: "How Study Pricing Is Calculated on Jaspari Studies"
 sidebarTitle: "Pricing"
-description: "Formula-driven pricing per study based on criteria, geography, and features. No minimums, no contracts, no termination fees."
+description: "Each study's per-lead price is set from a formula and locked in when you launch. You're billed only when a volunteer accepts an offer, plus a flat fee per booked visit."
 ---
 
-Each study gets its own price, calculated from your specific eligibility criteria and geographic scope rather than a flat per-participant rate. This means your price reflects how difficult your specific cohort is to recruit, not an average across all studies on the platform.
+Each study gets its own price per lead, calculated from a base rate plus two surcharges: how narrow your eligibility criteria make your pool, and how tightly you've scoped your recruitment area.
 
-Jaspari Studies uses a formula-driven price for every study. Instead of flat fees or bundled packages, your cost reflects the actual complexity of your recruitment: how specific your eligibility criteria are, how wide your geographic reach is, and which features you enable. There are no minimum spend requirements, no contract lock-ins, and no termination fees. You pay only for what you configure.
+## What you're actually billed for
 
-## What Drives Your Price What affects your price
+There are two billable events:
 
-<CardGroup cols={3}>
-  <Card title="Eligibility criteria" icon="sliders" href="/studies/eligibility-parameters">
-    The number and type of inclusion and exclusion rules affect how narrow your eligible population is, and therefore how much recruiting effort is needed to fill it.
+<CardGroup cols={2}>
+  <Card title="A volunteer accepts your study" icon="user-check">
+    You're charged the study's price per lead the moment a volunteer accepts an offer to join your study. This is the core charge.
   </Card>
-  <Card title="Geographic scope" icon="map-pin" href="/studies/geographic-scope">
-    A single ZIP radius costs less to saturate than a statewide or nationwide campaign. Tighter geo scope generally means lower cost per lead.
-  </Card>
-  <Card title="Optional features" icon="sparkles" href="/studies/overview">
-    Optional features such as multilingual outreach or multi-site routing are factored into price when selected for a study.
+
+  <Card title="A visit gets booked" icon="calendar-check">
+    If scheduling is turned on for a site and Jaspari books the visit, a separate flat scheduling fee is charged per booked appointment. This is independent of the per-lead price.
   </Card>
 </CardGroup>
 
-## Predicting spend before launch
+A volunteer who accepts but never books a visit is still billed as a lead — just with no scheduling fee attached.
 
-Because pricing is calculated before you launch, you can review projected cost against your budget while the study is still in draft. Set a per-study spend limit to cap costs at a defined ceiling — recruitment pauses automatically once that limit is reached, so spend can't exceed what you approved.
+## How the per-lead price is calculated
+
+The per-lead price is:
+
+**floor + eligibility-criteria surcharge + geography surcharge**
+
+- **Floor** — a base rate.
+- **Eligibility-criteria surcharge** — based on how rare the combination of conditions, medications, and other inclusion/exclusion criteria you've selected is in the general population. Rarer combinations cost more to recruit for, so they carry a larger surcharge. Conditions, medications, and other criteria types are all priced the same way — there's no separate rate depending on which type of criterion it is.
+- **Geography surcharge** — based on the population inside your chosen recruitment area. A smaller population (a tight ZIP radius, for example) carries a larger surcharge than a large one (statewide or nationwide), since a smaller pool is harder to recruit from.
+
+## You see a price, you're billed on it
+
+While a study is in draft, the price estimate you see updates live as you change eligibility criteria or recruitment area — it tracks the platform's current pricing formula. The moment you launch, that number is locked in permanently for the study. It doesn't drift afterward from unrelated changes elsewhere on the platform (a pricing-data refresh, a site becoming inactive, and so on) — only a deliberate edit to the study itself (its criteria, its recruitment area, or its sites) recalculates and re-locks the price.
+
+The one exception: if Jaspari has manually customized pricing for your specific study, the pricing screen tells you so explicitly, and your price may not match the standard formula.
 
 ## Pausing and resuming
 
-You can pause and resume recruitment at any time without losing your study configuration. Enrollment goals and spend limits can be adjusted between pause and resume as your protocol evolves. See <a href="/studies/launching-pausing">Launch, Pause, and Complete a Study</a> for how pausing affects in-flight leads.
-
-## Portfolio billing for research organizations
-
-If your organization manages multiple studies, billing can be structured across your portfolio rather than tracked individually at the study level. Billing responsibility and study ownership are tracked separately, so a study's charges can resolve to your organization independently of which site or team actually operates it. Contact your account liaison to discuss portfolio-level billing arrangements.
+You can pause and resume a study at any time. See [Launch, Pause, and Amend a Study](/studies/launching-pausing) for how pausing affects leads already in progress. If your calculated price would cross the platform's custom-quote threshold, the estimate is hidden in favor of "contact us for a custom quote," and the study can't go live (or resume from pause) until that's resolved.
 
 <Tip>
-If your eligibility criteria are unusually complex — for example, requirements beyond what the standard rule builder supports, described in <a href="/studies/eligibility-parameters">Eligibility Parameters</a> — contact your liaison before launching so pricing can be assessed accurately.
+The pricing estimate on your study's setup page is the same number, computed the same way, that you'll actually be charged — not a separate approximation. If Jaspari has customized your study's pricing, the page says so explicitly.
 </Tip>
-
-<CardGroup cols={2}>
-  <Card title="Eligibility Complexity" icon="list-checks">
-    The more conditions, medications, and numeric criteria you include, the more screening work the platform performs. Complex boolean logic, such as (A and B) or (A and not Y), adds matching overhead and is reflected in the price.
-  </Card>
-
-  <Card title="Geographic Scope" icon="globe">
-    A tight ZIP radius costs less than statewide or nationwide targeting. Broader scopes require larger candidate pools and more distribution effort.
-  </Card>
-
-  <Card title="Study Format" icon="monitor">
-    Standard in-person studies, hybrid models, fully virtual or decentralized trials, and survey-only projects each carry different operational costs. The format you select is factored into the estimate.
-  </Card>
-
-  <Card title="Optional Features" icon="sparkles">
-    Additional capabilities, such as advanced diversity recruitment targeting or enhanced reporting, may adjust the formula if enabled for the study.
-  </Card>
-</CardGroup>
-
-## No Minimums or Contracts
-
-You can launch a study with any budget. There is no minimum spend, no required contract length, and no penalty for ending a study early. If you pause or close a study, you stop incurring charges for that study immediately. Unused credits remain in your wallet for future use.
-
-## Where to See Your Estimate
-
-As you configure a study, the platform displays a live price estimate on the study configuration screen. The estimate updates in real time when you change eligibility criteria, expand geographic scope, or toggle features. Review the estimate before you launch so you know exactly what the study will cost.

@@ -4,42 +4,42 @@ sidebarTitle: "Geographic Scope"
 description: "Control exactly where your recruitment spend is directed. Choose ZIP radius, county, statewide, or nationwide coverage for each study or site."
 ---
 
-Jaspari Studies lets you define where volunteers must live or work before they are matched to your study. You can set geography at the study level or independently for each site, so recruitment spend is directed only where you need it.
+Every study has one geographic scope, set at the study level, that defines where volunteers must be located to match.
 
-## Scope Levels
-
-Pick the level that fits your protocol and site footprint. You can change this at any time without creating a new study.
+## Scope types
 
 <CardGroup cols={2}>
-  <Card title="ZIP Radius" icon="navigation">
-    Draw a circle around a specific ZIP code and recruit only volunteers within that radius. Ideal for single-site studies with strict travel requirements or local community outreach.
+  <Card title="Site Radius" icon="navigation">
+    A radius around one of your assigned sites. Fits a study where volunteers need to travel to a physical location.
   </Card>
 
-  <Card title="County" icon="map">
-    Expand to full county coverage when your site draws from a broader metro area. Useful when ZIP-level targeting is too narrow but statewide reach is unnecessary.
+  <Card title="ZIP Radius" icon="map-pin">
+    A radius around a specific ZIP code, independent of any site — useful when your recruitment area isn't centered on a physical location.
   </Card>
 
-  <Card title="State" icon="landmark">
-    Cover an entire state for multi-site networks or state-specific registries. Each site can claim its own statewide catchment, or you can run a single statewide campaign.
+  <Card title="ZIP List" icon="list">
+    A specific, hand-picked list of ZIP codes.
+  </Card>
+
+  <Card title="States" icon="landmark">
+    One or more entire states.
   </Card>
 
   <Card title="Nationwide" icon="globe">
-    Recruit across the United States for fully virtual or decentralized studies, or for large networks with sites in many states. The platform routes volunteers to the nearest participating site automatically.
+    The entire United States — typically used for virtual studies or very broad recruitment.
   </Card>
 </CardGroup>
 
-## Multi-Site Studies
+## How geography affects price
 
-When a study includes more than one site, each site can have its own independent geographic scope. A volunteer who lives inside two overlapping catchment areas is routed to the site that needs enrollment most, based on your per-site targets and the auto-routing rules.
+Your recruitment area's population factors into your study's per-lead price: a smaller population inside your chosen scope means a larger geography surcharge, since a smaller pool is harder to recruit from. See [Pricing](/billing/how-pricing-works) for how this combines with your eligibility criteria to set the final price.
 
-If you prefer, you can also set a single study-wide geography and let the platform assign volunteers to sites by proximity and enrollment progress.
+## Adjusting scope
 
-## Adjusting Scope
+You can change your geographic scope any time the study is in draft, active, or paused. Common reasons to adjust:
 
-You can widen or narrow geographic scope at any point during the study. Common reasons to adjust include:
+- Your current radius or ZIP list isn't yielding enough volunteers.
+- A protocol amendment changes how far volunteers can reasonably travel.
+- You're expanding from a single-state to a nationwide virtual arm.
 
-- Opening a new site and expanding its catchment area
-- Tightening radius after a protocol amendment limits travel
-- Switching from statewide to nationwide for a virtual arm
-
-Changes take effect immediately for new volunteer matches. Existing qualified volunteers are not removed unless your protocol requires re-evaluation.
+Changing your recruitment area recalculates your study's price the next time the study is (re)launched or otherwise deliberately edited — it doesn't retroactively change what you've already been charged for leads sent before the change.

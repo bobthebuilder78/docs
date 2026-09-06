@@ -39,7 +39,7 @@ Once you've created a study, everything else happens on its Setup page: eligibil
 
 A study moves through five statuses:
 
-```
+```text
 draft → active ⇄ paused → ended
                   ↓
                completed
@@ -49,14 +49,14 @@ Draft is the only status you can edit freely, and there's no path back to it onc
 
 ### What stays editable after launch
 
-Fields fall into two groups with different editing windows.
+Fields fall into three groups, though two of them share the same editing window.
 
 <CardGroup cols={2}>
   <Card title="Locked at launch" icon="lock">
-    Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft.
+    Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft, and lock forever the moment it leaves draft.
   </Card>
   <Card title="Editable through active and paused" icon="pen">
-    Sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, visit reminders, enrollment goal, target completion date, compensation, recruitment dates, and recruitment area. These lock once the study is ended or completed.
+    Two groups share this window: day-to-day settings like sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, and visit reminders; and goal-related settings like enrollment goal, target completion date, compensation, recruitment dates, and recruitment area. Both groups lock once the study is ended or completed.
   </Card>
 </CardGroup>
 
@@ -65,8 +65,9 @@ If you try to save a change to a locked field, you'll get an error naming exactl
 ## What has to be true before you can launch
 
 - Every eligibility rule group needs an inclusion logic choice set (any-of or all-of).
-- If your recruitment area is defined by radius around a site, every assigned site needs a radius configured.
+- If your recruitment area is a radius around a site, that setup needs at least one assigned site with a radius configured — this requirement is specific to that one scope type, not a general sites rule.
 - Depending on your account, you may need an active payment method or a minimum wallet deposit on file before your first study launches. This is a one-time account-level setup, not a per-study requirement.
+- If your study's calculated price is at or above the platform's custom-quote threshold, you won't be able to launch (or resume from pause) until that's resolved — the pricing screen will tell you if this applies.
 
 ## Sites, virtual studies, and hybrid studies
 
