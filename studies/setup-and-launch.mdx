@@ -1,0 +1,77 @@
+---
+title: "Study Setup and Launch"
+sidebarTitle: "Setup & Launch"
+description: "Walk through the Setup wizard step by step, what locks after launch, and what has to be true before a study can go live."
+---
+
+Once you've created a study, everything else happens on its Setup page: eligibility, sites, compensation, recruitment area, and the settings that gate whether it can actually launch.
+
+## The Setup wizard
+
+<Steps>
+  <Step title="Basic Information">
+    Name, description, study format (site-based, virtual, or hybrid), study type, phase, sponsor, protocol and NCT numbers, duration, and recruiter contact info.
+  </Step>
+  <Step title="Screening Questions">
+    Built through the eligibility rule builder. See [Eligibility Parameters](/studies/eligibility-parameters).
+  </Step>
+  <Step title="Compensation">
+    A toggle, total amount, and an optional itemized payment schedule.
+  </Step>
+  <Step title="Sites">
+    Assign existing sites or add new ones. This is also where you turn on volunteer self-scheduling and visit reminders, if you use them. See [Sites](/organizations/sites).
+  </Step>
+  <Step title="Recruitment Area">
+    Choose how you define your geography: radius around a site, nationwide, by state, or by a list of ZIP codes. See [Geographic Scope](/studies/geographic-scope).
+  </Step>
+  <Step title="Visible to Volunteers">
+    Control which fields volunteers see on the study's public page.
+  </Step>
+  <Step title="Recruitment Goals">
+    Start and end dates, enrollment goal, target completion date.
+  </Step>
+  <Step title="Shared With">
+    Manage collaborating organizations and ownership transfer. See [Collaboration](/organizations/collaboration).
+  </Step>
+</Steps>
+
+## Study lifecycle
+
+A study moves through five statuses:
+
+```
+draft → active ⇄ paused → ended
+                  ↓
+               completed
+```
+
+Draft is the only status you can edit freely, and there's no path back to it once you launch. Ended and completed are final: if something needs correcting after that point, contact support.
+
+### What stays editable after launch
+
+Fields fall into two groups with different editing windows.
+
+<CardGroup cols={2}>
+  <Card title="Locked at launch" icon="lock">
+    Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft.
+  </Card>
+  <Card title="Editable through active and paused" icon="pen">
+    Sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, visit reminders, enrollment goal, target completion date, compensation, recruitment dates, and recruitment area. These lock once the study is ended or completed.
+  </Card>
+</CardGroup>
+
+If you try to save a change to a locked field, you'll get an error naming exactly which field is the problem.
+
+## What has to be true before you can launch
+
+- Every eligibility rule group needs an inclusion logic choice set (any-of or all-of).
+- If your recruitment area is defined by radius around a site, every assigned site needs a radius configured.
+- Depending on your account, you may need an active payment method or a minimum wallet deposit on file before your first study launches. This is a one-time account-level setup, not a per-study requirement.
+
+## Sites, virtual studies, and hybrid studies
+
+A study's delivery model mainly controls what volunteers see on its public page. Virtual studies don't show a Sites section, since there's nothing to show. Site-based and hybrid studies both show one.
+
+A site-based or hybrid study can still launch and run with zero sites attached, as long as its recruitment area isn't defined by radius around a site. Leads for such a study are fully visible, fully workable, and billed the same as any other lead. They're just not tied to a location until you assign one, which you can do from the lead's detail page at any time.
+
+If your recruitment area does depend on a site radius, you'll need at least one site with a radius set before you can launch.

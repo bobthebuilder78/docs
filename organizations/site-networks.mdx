@@ -1,0 +1,84 @@
+---
+title: "Run a Site Network with Central Oversight"
+sidebarTitle: "Site Networks"
+description: "Contracted sites run their own studies while the network keeps compliance and billing oversight."
+---
+
+Jaspari Studies supports site networks that need to balance local autonomy with central control. Individual sites can build and run their own recruitment campaigns, while the network office maintains visibility into compliance, enrollment, and billing. This structure works for multi-site research organizations, hospital systems, and national site networks.
+
+## Setting Up a Site Network
+
+<Steps>
+  <Step title="Add sites to your network">
+    Invite each site as a sub-organization under your network account. Every site gets its own workspace but remains linked to your central admin view.
+  </Step>
+  <Step title="Set per-site permissions">
+    Decide what each site can do. Some networks let sites create studies freely. Others require network approval for every new protocol. Use the roles and permissions settings to enforce your policy.
+  </Step>
+  <Step title="Delegate study creation">
+    Allow site staff to define eligibility criteria, set geographic scope, and launch recruitment for studies assigned to their location. Network admins retain the ability to edit or pause any study.
+  </Step>
+  <Step title="Monitor from network admin view">
+    Use the network dashboard to see enrollment across all sites, compare performance, and spot compliance issues without logging into individual site accounts.
+  </Step>
+</Steps>
+
+## Separating Ops from Billing
+
+Day-to-day study management can live at the site level, but billing can resolve to the network organization regardless of who created the study. This is useful when sites operate independently but the central office handles contracts and sponsor relationships. You choose the billing owner during study setup, and network admins can change it later if the study moves between funding sources.
+
+## Compliance Oversight
+
+Network admins have access to the full timestamped audit log for every site in the network. You can review logins, record views, permission changes, and study sharing events across the entire network from a single screen. This supports sponsor audits and 21 CFR Part 11 requirements. For details on audit logging, see the [audit log documentation](/compliance/audit-log).
+
+If you run a network of clinics, the pattern that works is simple: one organization owns the studies, and each clinic in your network is its own separate organization that collaborates on those studies. There's no separate "network" account type to configure. It's the same collaboration model any two organizations use, just applied to several sites at once.
+
+## The shape of it
+
+Say you have ten clinics. Each one is a real, independent organization on Jaspari Studies: its own login, its own team, its own roles, its own physical sites. Your central organization owns the studies those ten clinics recruit for.
+
+Each clinic is invited as a collaborator on the studies it participates in, typically at **Manager** or **Recruiter** tier:
+
+- **Recruiter tier** fits a clinic that just works leads day to day: updating status, booking visits, adding notes.
+- **Manager tier** fits a clinic that also needs to attach its own physical sites to the study, or help manage setup details like eligibility criteria.
+
+<Note>
+  A collaboration tier caps the whole clinic's organization, not one person. A Recruiter-tier clinic's own Organization Admin still can't touch study setup. See [Collaboration](organizations/collaboration) for the full tier breakdown.
+</Note>
+
+## Billing stays with your central organization
+
+Your organization owns the studies, so your organization is billed for them, regardless of which clinic is actually working the leads. None of the ten clinics see or handle billing for studies they're only collaborating on. If a clinic ever needs to run and pay for a study entirely on its own, unrelated to your network's studies, it can, since it's a genuinely separate organization. That's just a study it owns itself, outside this arrangement.
+
+## What each side sees
+
+<CardGroup cols={2}>
+  <Card title="Your central organization" icon="binoculars">
+    Owns the studies. Can see every lead across every collaborating clinic, since study ownership always includes full visibility. Handles all billing for these studies.
+  </Card>
+
+  <Card title="Each clinic" icon="house">
+    Sees leads at its own sites, plus works within whatever tier it was given. Cannot see another clinic's leads on the same study, even though both collaborate on it. Keeps its own separate billing for anything it runs outside this arrangement.
+  </Card>
+</CardGroup>
+
+## Setting it up
+
+<Steps>
+  <Step title="Create the study under your central organization">
+    This organization will own it and be billed for it.
+  </Step>
+  <Step title="Invite each clinic as a collaborator">
+    From the study, invite each clinic's organization and choose the tier that matches what it needs to do (see above).
+  </Step>
+  <Step title="Each clinic accepts">
+    A clinic's own admin accepts the invitation from their own account. Their team's access follows whatever roles they've set up internally, capped by the tier you gave them.
+  </Step>
+  <Step title="Each clinic attaches its own sites">
+    At Manager tier, a clinic can assign its own physical sites to the study. A clinic can only ever attach sites it owns itself, never another clinic's.
+  </Step>
+</Steps>
+
+<Tip>
+  If a clinic ever needs to be dropped from the network's studies, remove it as a collaborator from each study. Its own organization, team, and any studies it runs independently are unaffected.
+</Tip>

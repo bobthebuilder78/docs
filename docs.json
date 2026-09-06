@@ -1,0 +1,104 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Jaspari Studies",
+  "theme": "sequoia",
+  "colors": {
+    "primary": "#10192b",
+    "light": "#B049FD",
+    "dark": "#B049FD"
+  },
+  "favicon": {
+    "light": "/images/android-chrome-192x192.png",
+    "dark": "/images/android-chrome-192x192.png"
+  },
+  "logo": {
+    "light": "/images/android-chrome-192x192.png",
+    "dark": "/images/android-chrome-192x192.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@jaspari.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Sign Up",
+      "href": "https://studies.jaspari.com/signup"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "quickstart",
+              "account-setup",
+              "concepts"
+            ]
+          },
+          {
+            "group": "Design Your Study",
+            "pages": [
+              "studies/overview",
+              "studies/setup-and-launch",
+              "studies/pipeline-statuses",
+              "studies/eligibility-parameters",
+              "studies/study-formats",
+              "studies/geographic-scope",
+              "studies/enrollment-goals",
+              "studies/launching-pausing"
+            ]
+          },
+          {
+            "group": "Run Recruitment",
+            "pages": []
+          },
+          {
+            "group": "Teams & Organizations",
+            "pages": [
+              "organizations/sites",
+              "organizations/collaboration",
+              "organizations/roles-permissions",
+              "organizations/site-networks"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "billing/how-pricing-works",
+              "billing/promotional-credit",
+              "billing/wallet-credits"
+            ]
+          },
+          {
+            "group": "Trust & Compliance",
+            "pages": [
+              "compliance/audit-log",
+              "compliance/hipaa-baa",
+              "compliance/irb-library"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "support/contact",
+              "support/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {}
+  },
+  "fonts": {
+    "family": "Work Sans",
+    "weight": 400
+  }
+}

@@ -1,0 +1,108 @@
+---
+title: "Manage Team Roles and Scoped Permissions"
+sidebarTitle: "Roles & Permissions"
+description: "Control what team members and external collaborators can see and do, scoped by study, site, or organization."
+---
+
+Jaspari Studies lets you decide exactly who can access what. You assign permissions to users and scope them to an organization, a specific study, or an individual site. This keeps sensitive recruitment data visible only to the people who need it, and every permission change is recorded in the audit log.
+
+## Permission Scopes
+
+<CardGroup cols={2}>
+  <Card title="Organization-wide" icon="building">
+    Grants access across every study and site in your organization. Use this for executive sponsors, compliance officers, and org administrators who need a full view of operations.
+  </Card>
+
+  <Card title="Study-scoped" icon="flask">
+    Limits access to one or more named studies. Ideal for recruiters and study managers who should only see the protocols they are assigned to.
+  </Card>
+
+  <Card title="Site-scoped" icon="map-pin">
+    Restricts access to a single site or a subset of sites. Perfect for site coordinators who manage day-to-day enrollment at specific locations.
+  </Card>
+
+  <Card title="Read-only" icon="eye">
+    Allows viewing dashboards, reports, and audit logs without the ability to edit studies, invite users, or change settings. Common for sponsor representatives and auditors.
+  </Card>
+</CardGroup>
+
+Every person on your team gets one of five roles. The role controls what they can see and do across your organization.
+
+## Typical Roles The five roles
+
+<CardGroup cols={2}>
+  <Card title="Organization Admin" icon="shield-check">
+    Full access. Only Organization Admins can manage the team, billing, organization settings, and study ownership. Every organization needs at least one.
+  </Card>
+
+  <Card title="Organization Manager" icon="pen-to-square">
+    Runs studies and sites day to day. Can create and edit studies, launch, pause, or end them, share a study with another organization, manage sites, and work leads. Cannot touch billing, organization settings, team management, or study ownership.
+  </Card>
+
+  <Card title="Team Member" icon="user">
+    Works the recruitment pipeline. Can update a lead's status, add notes, book and reschedule visits, reassign a lead to a different site, add a lead manually, and update volunteer details that need verification. Cannot change study, site, billing, or organization settings.
+  </Card>
+
+  <Card title="Billing Admin" icon="credit-card">
+    Sees everything, and additionally handles money: invoices, payment methods, wallet deposits, and payments. Cannot change a lead, a study, a site, or organization settings. This is a separate track from the operational roles above it, not a lower or higher rung on the same ladder.
+  </Card>
+</CardGroup>
+
+<Card title="Read-Only" icon="eye">
+  Can view everything the person's access covers. Cannot make changes anywhere.
+</Card>
+
+A clinic with a front-desk coordinator, a study manager, and an office manager who handles invoices might set up the coordinator as a Team Member, the study manager as an Organization Manager, and the office manager as a Billing Admin. That keeps billing separate from day-to-day study work.
+
+## Invite a team member
+
+<Steps>
+  <Step title="Open Team settings">
+    Go to **Settings → Team**.
+  </Step>
+  <Step title="Enter their email and pick a role">
+    There's no default role. You must choose one before the invite can be sent.
+  </Step>
+  <Step title="Wait for acceptance">
+    The invite is valid for 14 days. If it isn't accepted in that window, it expires and can be re-sent.
+  </Step>
+  <Step title="Confirm they're on the team">
+    Once accepted, the person shows up in your team list with the role you assigned.
+  </Step>
+</Steps>
+
+These are the roles teams commonly set up in Jaspari Studies. You can mix and match scopes to fit your structure.
+
+- **Recruiter**: Creates and manages studies, adjusts eligibility criteria, and monitors participant flow. Usually study-scoped.
+- **Legal / Compliance Officer**: Reviews consent language, checks IRB materials, and reads audit logs. Often organization-wide and read-only.
+- **Site Coordinator**: Handles day-to-day screening and scheduling at a specific location. Typically site-scoped.
+- **Sponsor Representative**: Views enrollment progress and spend for studies they fund. Usually read-only and study-scoped.
+- **Org Admin**: Invites users, sets roles, manages billing, and configures organization settings. Always organization-wide.
+
+## How Permissions Are Enforced
+
+Jaspari Studies checks permissions at every action, from opening a dashboard to exporting a participant list. If a user tries to perform an action outside their scope, the platform blocks the request and logs the attempt. That log entry includes the user, timestamp, action, and outcome, so you can review it during an internal review or sponsor audit.
+
+Permission changes themselves are also audited. When you add, modify, or remove a role, the update appears in the full timestamped audit log with the old and new values. For more on audit logging, see the [audit log documentation](/compliance/audit-log).
+
+You can change a person's role or remove them from the team at any time from the same page.
+
+## When your organization collaborates on someone else's study
+
+If another organization shares a study with you, your team members' access to that specific study is capped by two things at once: their role at your organization, and the collaboration tier your organization was given on that study. Whichever is more restrictive wins.
+
+There are three collaboration tiers:
+
+- **Manager tier** — your Organization Admins and Managers can edit study setup and work leads. Your Team Members can still only work leads.
+- **Recruiter tier** — nobody at your organization can edit study setup, even your Organization Admin. Everyone is limited to working leads (or viewing, depending on their own role).
+- **Viewer tier** — everyone at your organization can view the study, but nobody can make changes.
+
+<Note>
+  If your organization is invited at Recruiter tier, your Organization Admin cannot edit that study's eligibility criteria or sites. The tier caps the whole organization, regardless of individual role.
+</Note>
+
+Your own sites, your own organization settings, and your own billing are never affected by a collaboration tier on someone else's study. Those are always governed by your team members' roles at your own organization.
+
+<Tip>
+  See [Collaboration](organizations/collaboration) for how sharing a study actually works, including what happens when your organization is one of several sites collaborating with a central sponsor or network.
+</Tip>
