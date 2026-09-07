@@ -4,12 +4,38 @@ sidebarTitle: "Audit Log"
 description: "Organization Admins can view a log of account activity from organization settings."
 ---
 
-An audit log tracks activity on your organization's account, available to Organization Admins from organization settings. Logged activity includes team changes, study status changes, and billing events. Entries are retained indefinitely.
+An audit log tracks activity on your organization's account, available to Organization Admins from
+organization settings.
 
 ## Who can see it
 
 Access to the audit log is limited to Organization Admins.
 
+## What's logged
+
+Every action taken within the organization: logins and logouts, volunteer profile and volunteer list
+views, study views and status changes, study sharing (inviting, accepting, or declining another
+organization, and ownership transfers), team member access changes and removals, and additions or removals
+from the restricted phone number list.
+
+Each entry shows who took the action (or "Jaspari Studies" / "System" for actions not taken by a person on
+your team), what the action was, details specific to that action, and when it happened in your own
+timezone.
+
+## Filtering
+
+Entries can be filtered by activity type (login/logout, volunteer views, studies, team & roles), by a
+specific person, and by date range.
+
 ## Downloading the log
 
-From the Audit Log page, select **Download** to export the log as a CSV file. This is useful for sharing activity records with a sponsor or during a regulatory review.
+From the Audit Log page, select **Download** to export the currently filtered log as a CSV file. This is
+useful for sharing activity records with a sponsor or during a regulatory review.
+
+## Volunteer data and the audit log
+
+Entries about a volunteer or lead are masked according to the viewing admin's own current data visibility
+setting, not the visibility of whoever performed the original action. This means an admin who has lowered
+their own visibility cannot use the audit log to read back identifying details they've chosen not to see
+elsewhere. See [Volunteer Data Visibility](/compliance/volunteer-data-visibility) for how that setting
+works.

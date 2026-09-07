@@ -5,13 +5,21 @@ description: "Organization Admins can review and accept a Business Associate Agr
 ---
 
 Organization Admins can review and accept a Business Associate Agreement (BAA) from organization settings.
+Only Organization Admins can view or accept it, the same access gate used for the Team settings page,
+since acceptance is binding for the entire organization rather than an individual user's account.
 
-If your organization is a covered entity under HIPAA, a BAA is required by federal regulations before sharing protected health information with a vendor. Accepting it is how that requirement gets satisfied on this platform.
+If your organization is a covered entity or business associate under HIPAA and is handling protected
+health information (PHI) through the platform, a signed BAA must be on file. The BAA defines how PHI is
+used, disclosed, and safeguarded, and what each party is responsible for. Jaspari ensures its own
+technologies and processes are HIPAA-compliant regardless of BAA status, but it remains the covered
+entity's or business associate's responsibility to take proper safeguards to protect users' data.
 
-<Note>
-  This page intentionally stays brief. For details about BAA coverage, execution, and data-protection practices, contact your platform representative before relying on this page for compliance planning.
-</Note>
+## Reviewing and accepting
 
-<Warning>
-  You can launch or resume a study freely regardless of your BAA acceptance status. Time your compliance review on its own schedule.
-</Warning>
+The settings page embeds the current BAA document in full for review. To accept it, an Organization Admin
+checks a confirmation box stating they've read and agree to the agreement on behalf of the organization and
+are authorized to accept it, then confirms. Once accepted, the page displays who accepted it and the date,
+and the checkbox flow is replaced with that confirmation for every admin who visits the page afterward.
+
+Acceptance applies to the whole organization, not just the accepting user. If the agreement is later
+changed, it is sent out again for a new signature.

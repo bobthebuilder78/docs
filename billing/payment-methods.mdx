@@ -1,0 +1,32 @@
+---
+title: "Payment Methods"
+sidebarTitle: "Payment Methods"
+description: "Add, remove, and set a default card. Card payments only — Jaspari never sees or stores your full card number."
+---
+
+Your organization can save one or more cards to pay invoices and fund your wallet. Card data is handled entirely by Stripe — Jaspari's servers only ever see the card's brand, last 4 digits, and expiration date, never the full number or CVC.
+
+## Adding a card
+
+From Settings > Billing > Payment methods, select **Add a card**. This starts a secure Stripe form and saves the card to your organization — no charge is made just for adding it.
+
+The first card your organization ever saves automatically becomes the default card used for automatic charges. Any card added after that does not change the default on its own; you choose which card is the default explicitly (see below).
+
+## Setting a default card
+
+If you have more than one card saved, you can set any of them as the default from the Payment methods page. The default card is the one used for automatic charges, including retries on a failed cadence payment. Only an explicit choice by your team changes it — the platform never re-defaults a card on its own once more than one is saved.
+
+## Removing a card
+
+A card can be removed at any time, with two exceptions:
+
+- **The only card on file can't be removed.** Since your organization needs at least one chargeable card, you'll need to add a replacement before removing your last one.
+- **The current default card can't be removed directly.** Set a different card as the default first — once it's no longer the default, the old one can be removed normally.
+
+## Who can manage payment methods
+
+Adding, removing, and setting a default card is restricted to your organization's **Organization Admin** and **Billing Admin** roles. Other roles can't view or change payment methods.
+
+<Tip>
+Jaspari staff can view the brand, last 4 digits, and expiration of your saved cards, and can remove one on your organization's behalf if needed — but staff never pay an invoice or add a card using your saved payment methods themselves.
+</Tip>

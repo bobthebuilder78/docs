@@ -64,8 +64,10 @@
           {
             "group": "Billing",
             "pages": [
-              "billing/how-pricing-works",
-              "billing/wallet-credits"
+              "billing/pricing",
+              "billing/payment-methods",
+              "billing/billing-cycles",
+              "billing/credits"
             ]
           }
         ]
@@ -78,7 +80,8 @@
             "pages": [
               "compliance/audit-log",
               "compliance/hipaa-baa",
-              "compliance/irb-library"
+              "compliance/irb-library",
+              "compliance/volunteer-data-visibility"
             ]
           }
         ]
