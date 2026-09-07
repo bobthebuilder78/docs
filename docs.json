@@ -74,7 +74,7 @@
             "group": "Trust & Compliance",
             "pages": [
               "compliance/audit-log",
-              "compliance/hipaa-baa",
+              "compliance/hipaa",
               "compliance/irb-library",
               "compliance/volunteer-data-visibility"
             ]
@@ -87,7 +87,8 @@
           {
             "group": "Help",
             "pages": [
-              "support/faq"
+              "support/platform-representative",
+              "support/technical-support"
             ]
           }
         ]

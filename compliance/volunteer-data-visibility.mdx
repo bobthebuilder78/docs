@@ -10,14 +10,13 @@ study), volunteer data visibility controls how much of a volunteer or lead's rec
 
 ## The three levels
 
-- **Full** — everything, no restriction.
-- **Anonymized** — everything except direct identifiers: first name, last name, phone, email, and full
-  date of birth, plus status notes and Local details. Age still shows; the volunteer is identified by their
+- **Full** — all study-relevant volunteer data is visible.
+- **Anonymized** — all study-relevant volunteer data is visible except direct identifiers: first name, last name, phone, email, and full date of birth, plus status notes and Local details. The volunteer is identified by their
   public ID instead of their name.
-- **None** — no volunteer or lead data at all. Lists appear empty and the volunteer detail page is
+- **None** — no volunteer data is visible. Lists appear empty and the volunteer detail page is
   unavailable.
 
-This applies everywhere volunteer or lead data appears: pipeline views, the leads list, the screening
+Visibility settings apply everywhere volunteer data appears: pipeline views, the leads list, the screening
 queue, scheduled visits, appointments and calendars, volunteer detail pages, status history, and audit log
 entries about a volunteer.
 
@@ -31,9 +30,11 @@ Each person has a default visibility level tied to their role, set automatically
 adjustable by an Organization Admin from Team settings. An Organization Admin can also raise or lower a
 specific teammate's visibility for an individual study.
 
-Anyone, including an Organization Admin, can lower their own visibility at any time. Nobody can raise
-their own visibility — raising it back up always requires an Organization Admin to do it on that person's
-behalf.
+Anyone, including an Organization Admin, can lower their own visibility at any time. Nobody can raise their own visibility. Raising visibility always always requires an Organization Admin to do it on that person's behalf. 
+
+<Tip>
+  Because Organization Admin control visibility, they may optionally set their visibility to be only controllable by a Platform Representative. This will prevent any future changes to their own visibility. This may be necessary to comply with your organization's rules.
+</Tip>
 
 For the full permissions model this sits alongside, see [Roles &
 Permissions](https://studies-guides.jaspari.com/organizations/roles-permissions#volunteer-data-visibility).
