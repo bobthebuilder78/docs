@@ -60,11 +60,16 @@
       },
       {
         "tab": "Billing",
-        "pages": [
-          "billing/pricing",
-          "billing/payment-methods",
-          "billing/billing-cycles",
-          "billing/credits"
+        "groups": [
+          {
+            "group": "Billing",
+            "pages": [
+              "billing/pricing",
+              "billing/payment-methods",
+              "billing/billing-cycles",
+              "billing/credits"
+            ]
+          }
         ]
       },
       {
