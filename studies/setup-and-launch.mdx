@@ -16,7 +16,7 @@ Once you've created a study, everything else happens on its Setup page: eligibil
     Built through the eligibility rule builder. See [Eligibility Parameters](/studies/eligibility-parameters).
   </Step>
   <Step title="Compensation">
-    A toggle, total amount, and an optional itemized payment schedule.
+    A toggle, total amount, and an optional itemized payment schedule. Compensation is not required. Compensation amount may be included but hidden.
   </Step>
   <Step title="Sites">
     Assign existing sites or add new ones. This is also where you turn on volunteer self-scheduling and visit reminders, if you use them. See [Sites](/organizations/sites).
@@ -53,26 +53,26 @@ Fields fall into three groups, though two of them share the same editing window.
 
 <CardGroup cols={2}>
   <Card title="Locked at launch" icon="lock">
-    Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft, and lock forever the moment it leaves draft.
+    Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft, and lock once the moment it leaves draft.
   </Card>
   <Card title="Editable through active and paused" icon="pen">
-    Two groups share this window: day-to-day settings like sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, and visit reminders; and goal-related settings like enrollment goal, target completion date, compensation, recruitment dates, and recruitment area. Both groups lock once the study is ended or completed.
+    Sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, and visit reminders; and goal-related settings. These lock upon study completion/end.
   </Card>
 </CardGroup>
 
-If you try to save a change to a locked field, you'll get an error naming exactly which field is the problem.
+## Requirements before you lock
 
-## What has to be true before you can launch
-
-- Every eligibility rule group needs an inclusion logic choice set (any-of or all-of).
+- Every eligibility rule group needs an inclusion logic choice set (any-of or all-of). You do not need eligibility rules to launch a study, however. This is best use for surveys or studies for the general population.
 - If your recruitment area is a radius around a site, that setup needs at least one assigned site with a radius configured. This requirement applies specifically to that one scope type.
+
 - Depending on your account, you may need an active payment method or a minimum wallet deposit on file before your first study launches. This is a one-time account-level setup.
-- If your study's calculated price is at or above the platform's custom-quote threshold, launching (or resuming from pause) waits until that's resolved. The pricing screen will tell you if this applies.
+- If you are a covered entity, you may need to sign the Business Associate Agreement (BAA) if regulations require such for this particular study.
+- If your study's calculated price is at or above a certain price, launching (or resuming an editted study from pause) may require speaking to your platform's representative. The pricing screen will tell you if this applies.
 
 ## Sites, virtual studies, and hybrid studies
 
 A study's delivery model mainly controls what volunteers see on its public page. Virtual studies skip the Sites section entirely, since there's nothing to show. Site-based and hybrid studies both show one.
 
-A site-based or hybrid study can still launch and run with zero sites attached, as long as its recruitment area isn't defined by radius around a site. Leads for such a study stay fully visible, fully workable, and billed the same as any other lead. They wait for you to assign a location, which you can do from the lead's detail page at any time.
+A site-based or hybrid study can still launch and run with zero sites attached, as long as its recruitment area isn't defined by radius around a site. Interested volunteers for such a study stay fully visible, and fully workable. You may assign the volunteer to a site from their volunteer page at any time.
 
 If your recruitment area does depend on a site radius, you'll need at least one site with a radius set before you can launch.

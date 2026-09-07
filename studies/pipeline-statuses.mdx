@@ -4,9 +4,9 @@ sidebarTitle: "Pipeline & Statuses"
 description: "Track leads through your recruitment pipeline, and which email notifications you can turn on for each stage."
 ---
 
-Every lead in your portal has exactly one status at a time, organized into nine groups shown as tabs on your Volunteers page.
+Every volunteer in your portal has exactly one status at a time, organized into nine groups shown as tabs on your Volunteers page. The Miscellaneous category is designed to accomodate volunteers who may not fit into a particular status. Custom notes may be attached to this volunteer, as with all volunteers.
 
-## The nine pipeline groups
+## Nine Pipeline Statuses
 
 <AccordionGroup>
   <Accordion title="New Leads">
@@ -40,7 +40,7 @@ Every lead in your portal has exactly one status at a time, organized into nine 
 
 ## Updating a lead's status
 
-Click into any lead and use the status dropdown to move them between statuses. This is for your own tracking. Updating a lead's status has no effect on whether or how new leads are sent to you. Use notes on the lead's history to record why a status changed, since there's no separate reason field beyond each group's Miscellaneous catch-all.
+Click into any lead and use the status dropdown to move them between statuses. This is for your own tracking. Updating a volunteer's status has no effect on whether or how new volunteers are sent to you. For example, if a volunteer randomizes into a study and has their status set to Randomized, it does not alter your enrollment goals. Use notes on the lead's history to record why a status changed, since there's no separate reason field beyond each group's Miscellaneous catch-all.
 
 ## Scheduled visits
 
@@ -50,9 +50,11 @@ When scheduling is enabled, several statuses in the Scheduled group update autom
 - **Confirmed Automatically**: the volunteer completed their booking through the automated system.
 - **Confirmed by Staff**: your team confirmed the visit manually, a front-desk confirmation right before the appointment, or a visit your staff booked by hand.
 
-Once your staff sets a status manually on a lead or books a visit directly, that lead is treated as staff-managed. Further status changes are then controlled by your team.
+Your team can also set a visit to **Confirmed by Staff** . For example, a front-desk confirmation right before the appointment, or a visit your staff booked by hand. This status is always set manually and never applied automatically.
 
-If a site change invalidates an appointment that was automatically booked, that appointment is cancelled and the volunteer is notified. Appointments confirmed or booked by your staff remain under your control for any needed rescheduling.
+If a site change (hours, capacity, time zone, or the site going inactive) makes an appointment that's still Confirmed by Jaspari no longer valid, that appointment is cancelled automatically and the volunteer is texted a cancellation notice.
+
+There is a 3-hour grace period first, so a mistaken correction to the site settings will not automatically cancel appointments, except for appointments happening within the next 4 hours, which are resolved right away. A notice will be made available before you make any changes that may affect volunteers' appointments. Jaspari does not automatically rebook a cancelled visit, so your team will need to follow up directly to schedule a new time.
 
 ## Email notifications
 
@@ -66,15 +68,15 @@ From **Settings → Notifications**, you can control who on your team gets email
 | Invoice ready | On | Organization Admin or Billing Admin |
 | Payment failed (a manual payment attempt was declined) | On | Organization Admin or Billing Admin |
 
-New lead notifications arrive as a batched digest. The first lead after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating for the next digest.
+New volunteer notifications arrive as a batched digest. The first volunteer matched after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating for the next digest. This is to prevent spam.
 
 If your organization collaborates on a study, you can receive new-lead and maximum-matched-leads notifications for leads visible to you, such as leads at your own sites or unassigned leads.
 
 ### Notices you can't turn off
 
-Certain notifications are always sent with no option to disable them, as they report critical account or appointment status:
+Certain notifications are always sent with no option to disable them, as they report relevant account or appointment status:
 
-- Notification when a collaborated study is paused by its owner
 - Notification when a confirmed visit is cancelled due to site changes
+- Notification to a collaborator organization when a shared study is paused because its owning organization's account is not in good standing
 
 Billing notifications regarding failed charges, holds, payment status, and hold resolution are sent automatically to your Organization Admin and Billing Admin.
