@@ -24,17 +24,15 @@ A volunteer who accepts but never books a visit is still billed as a lead, with 
 
 ## How the per-lead price is calculated
 
-The per-lead price is:
+The per-lead price is made up of a base rate plus two surcharges:
 
-**floor + eligibility-criteria surcharge + geography surcharge**
-
-- **Floor**: a base rate.
-- **Eligibility-criteria surcharge**: based on how rare the combination of conditions, medications, and other inclusion/exclusion criteria you've selected is in the general population. Rarer combinations cost more to recruit for, so they carry a larger surcharge. Conditions, medications, and other criteria types are all priced the same way, regardless of which type of criterion it is.
+- **Base rate**: a starting price for every study.
+- **Eligibility-criteria surcharge**: based on how rare the combination of conditions, medications, and other inclusion or exclusion criteria you've selected is in the general population. Rarer combinations cost more to recruit for, so they carry a larger surcharge.
 - **Geography surcharge**: based on the population inside your chosen recruitment area. A smaller population, such as a tight ZIP radius, carries a larger surcharge than a large one such as statewide or nationwide coverage, since a smaller pool is harder to recruit from.
 
 ## You see a price, you're billed on it
 
-While a study is in draft, the price estimate you see updates live as you change eligibility criteria or recruitment area, tracking the platform's current pricing formula. The moment you launch, that number locks in permanently for the study. From then on, only a deliberate edit to the study itself, meaning its criteria, its recruitment area, or its sites, recalculates and re-locks the price. Unrelated changes elsewhere on the platform, like a pricing-data refresh or a site becoming inactive, leave your locked-in price alone.
+While a study is in draft, the price estimate you see updates live as you change eligibility criteria or recruitment area, tracking the platform's current pricing formula. The moment you launch, that number locks in permanently for the study. From then on, the price recalculates only when something about the study itself changes: an edit to its criteria or recruitment area, or a change to one of its sites (including a site's address or a site becoming inactive). A platform-wide pricing update on its own does not touch a study's already-locked price.
 
 The one exception: if Jaspari has manually customized pricing for your specific study, the pricing screen tells you so explicitly, and your price may not match the standard formula.
 

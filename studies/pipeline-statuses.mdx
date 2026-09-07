@@ -19,7 +19,7 @@ Every lead in your portal has exactly one status at a time, organized into nine 
     Passed initial contact, being reviewed before scheduling a visit: Pending Review, Ready to Schedule, No Longer Eligible, Miscellaneous.
   </Accordion>
   <Accordion title="Scheduled">
-    An appointment exists in some state: Confirmation Pending, Confirmed by Jaspari, Confirmed by Staff, Pending Visit, Rescheduled, Rescheduling, Cancelled, No Show, Miscellaneous.
+    An appointment exists in some state: Pending Visit, Confirmation Pending, Confirmed by Jaspari, Confirmed by Staff, Rescheduling, Rescheduled, Cancelled, No Show, Miscellaneous.
   </Accordion>
   <Accordion title="Visits">
     A screening visit, virtual screening, labs, or investigator review has occurred: Checked In, Screening In Progress, Screening Complete, Awaiting Results, Screening Failed, Miscellaneous.
@@ -61,7 +61,7 @@ From **Settings → Notifications**, you can control who on your team gets email
 | Notification | Default | Who can receive it |
 |---|---|---|
 | New lead matched | On | Any team member with the toggle on |
-| Maximum matched leads (soft or hard limit reached) | On | Any team member with the toggle on |
+| Maximum matched leads (covers both approaching and reaching your limit) | On | Any team member with the toggle on |
 | Weekly summary | Off | Any team member with the toggle on |
 | Invoice ready | On | Organization Admin or Billing Admin |
 | Payment failed (a manual payment attempt was declined) | On | Organization Admin or Billing Admin |
@@ -74,8 +74,7 @@ If your organization collaborates on a study rather than owning it, you can stil
 
 A handful of notices always go to every affected team member with no on/off toggle, because they cover account- or appointment-level status rather than a day-to-day preference:
 
-- Your organization's account being suspended.
-- A study you collaborate on being paused because its owner's account was suspended.
+- A study you collaborate on being paused for reasons on the owner's side.
 - A confirmed visit being cancelled automatically because of a change at the site (hours, availability, or the site being deactivated).
 
 Several other billing notices, including a failed automatic charge attempt, a billing hold beginning, retries stopping, a payment succeeding, or a hold being lifted, are sent automatically to your Organization Admin and Billing Admin, also with no toggle today.
