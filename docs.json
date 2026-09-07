@@ -21,14 +21,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Studies",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
-              "quickstart",
-              "account-setup",
-              "concepts"
+              "quickstart"
             ]
           },
           {
@@ -43,26 +41,38 @@
               "studies/enrollment-goals",
               "studies/launching-pausing"
             ]
-          },
-          {
-            "group": "Run Recruitment",
-            "pages": []
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Sharing",
+        "groups": [
           {
             "group": "Teams & Organizations",
             "pages": [
+              "account-setup",
               "organizations/sites",
               "organizations/collaboration",
               "organizations/roles-permissions"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Billing",
+        "groups": [
           {
             "group": "Billing",
             "pages": [
               "billing/how-pricing-works",
               "billing/wallet-credits"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Compliance",
+        "groups": [
           {
             "group": "Trust & Compliance",
             "pages": [
@@ -70,7 +80,12 @@
               "compliance/hipaa-baa",
               "compliance/irb-library"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
           {
             "group": "Help",
             "pages": [
