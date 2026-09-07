@@ -1,78 +1,47 @@
 ---
-title: "Set Per-Site Enrollment Goals That Auto-Rebalance"
+title: "Set Enrollment Goals and Lead Limits"
 sidebarTitle: "Enrollment Goals"
-description: "Assign per-site enrollment targets and let the platform route volunteers to sites that are behind their goals. No manual rebalancing required."
+description: "A study has an informational enrollment goal for tracking, plus two study-level settings, max leads and soft limit, that actually control the flow of leads."
 ---
 
-Jaspari Studies lets you assign a specific enrollment target to every site in a study. Once targets are set, the platform monitors progress automatically and surfaces new volunteers to under-target sites first, so you do not have to redistribute leads manually.
-
-## How to Set Enrollment Goals
-
-<Steps>
-  <Step title="Add sites">
-    Invite the sites that will participate in the study. Each site must be part of your organization or a collaborating organization you have invited.
-  </Step>
-  <Step title="Assign a target per site">
-    Enter the enrollment goal for each site. You can set different targets for different sites based on capacity, startup timing, or protocol requirements.
-  </Step>
-  <Step title="Monitor progress">
-    Open the study dashboard to see screened-in counts and progress toward each site's target in real time. The platform highlights sites that are ahead or behind.
-  </Step>
-  <Step title="Adjust targets">
-    If a site ramps faster than expected or another site falls behind, edit the targets directly. The routing engine recalculates immediately.
-  </Step>
-</Steps>
-
-## How Auto-Routing Works
-
-A study has two separate things that sound similar but do different jobs: an enrollment goal, which is for your own tracking, and lead limits, which actually control the flow of leads.
+A study has two separate things that sound similar but do different jobs: an enrollment goal, which is for your own tracking, and lead limits, which actually control the flow of leads. Both are set at the study level — there is no per-site version of either.
 
 ## Enrollment goal
 
-Enter an enrollment goal and a target completion date on the study's Recruitment Goals tab. This is informational. It doesn't route volunteers, doesn't pause anything, and doesn't change how leads are matched. It's there so you and your team have a target to measure progress against.
+Enter an enrollment goal and a target completion date on the study's Recruitment Goals tab. This is informational only. It doesn't route volunteers, doesn't pause anything, and doesn't change how leads are matched. It's there so you and your team have a number to measure progress against.
 
 ## Max leads and soft limit
 
-These are the settings that actually gate how many leads a study receives:
+These are the settings that actually gate how many leads a study receives.
 
 <CardGroup cols={2}>
   <Card title="Max leads" icon="circle-stop">
-    A hard cap. Once a study reaches its max leads, it stops receiving new leads entirely.
+    A hard, permanent cap on how many leads the study can ever receive. Once a study reaches its max leads, it stops receiving new leads entirely — enforced at the moment a volunteer accepts an offer, so two volunteers can't both take the last open slot.
   </Card>
 
   <Card title="Soft limit" icon="triangle-exclamation">
-    An early warning. When a study crosses its soft limit, you get a heads-up email that new leads are winding down, while a few already in progress may still arrive.
+    An earlier checkpoint. Once a study crosses its soft limit, you get an email that new leads are winding down — a couple already on the way may still arrive.
   </Card>
 </CardGroup>
 
-Both are editable from the study's Recruitment Goals tab at any time the study isn't ended or completed.
+If you don't set a soft limit, it falls back to your max leads. Both are editable from the study's Recruitment Goals tab at any time the study isn't ended or completed, and changes take effect immediately.
 
 <Note>
-  If you set a soft limit equal to your max leads, you'll only get the "reached lead limit" notice, since there's no separate "approaching" moment to report.
+  If you set soft limit equal to max leads, you'll only get the "reached lead limit" notice — there's no separate "approaching" moment to report when the two are the same.
 </Note>
 
 ## Adjusting limits mid-study
 
 You can raise or lower max leads and soft limit at any time. Common reasons:
 
-- A site finishes enrollment ahead of schedule and you want to stop new leads early.
+- Enrollment is going faster than expected and you want to stop new leads early.
 - A sponsor or IRB amendment changes your target sample size.
-- You want an early warning before you hit your cap, so you set a soft limit below it.
+- You want an earlier warning before you hit your cap, so you set a soft limit below it.
 
-Changes take effect immediately.
+## Studies with more than one site
 
-## Site-based studies with more than one site
-
-Enrollment goal and lead limits are set at the study level, not per site. If you need enrollment concentrated at a specific site, manage that through which sites are assigned to the study and each site's own scheduling capacity, covered in [Sites](/organizations/sites), rather than through the goal itself.
+Max leads and soft limit apply to the whole study, not to any one site. There is no per-site enrollment target and no automatic routing of volunteers toward under-enrolled sites. If you need enrollment concentrated at a particular site, that's managed through which sites are assigned to the study and each site's own scheduling availability — see [Sites](/organizations/sites) — not through the enrollment goal or lead limits.
 
 ## Virtual studies
 
-When a volunteer passes screening and matches your study, the platform checks every participating site's current enrollment progress. The volunteer is surfaced to the site with the largest gap between its target and its current count, provided the volunteer also falls within that site's geographic scope.
-
-If multiple sites are equally behind, proximity breaks the tie. You do not need to export lists, reassign leads, or contact sites to shift volume. The platform handles rebalancing continuously as new volunteers enter the funnel.
-
-<Tip>
-  Set your per-site target slightly above your true enrollment goal. A small buffer absorbs no-shows, screen failures at the site, and other drop-off without requiring constant target adjustments.
-</Tip>
-
-Virtual studies work the same way: an enrollment goal for tracking, and max leads/soft limit for actual control. There's no site to route by, since matching for a virtual study is based on recruitment area alone.
+The same two settings apply: an enrollment goal for tracking, and max leads/soft limit for actual control. Since a virtual study has no sites, matching is based on recruitment area alone.

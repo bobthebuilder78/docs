@@ -1,42 +1,37 @@
 ---
-title: "Choose a Study Format: In-Person, Hybrid, Virtual"
+title: "Choose a Study Format: Site-Based, Virtual, or Hybrid"
 sidebarTitle: "Study Formats"
-description: "Jaspari Studies supports four formats: standard in-person, hybrid, fully virtual/decentralized, and survey. Matching behavior adapts to the format you select."
+description: "Jaspari Studies supports three delivery models: site-based, virtual, and hybrid. This is mostly a display setting — what actually matters is whether you've assigned sites."
 ---
 
-Jaspari Studies supports every major research format used in the United States. The format you choose determines how volunteers are matched to sites, what geographic rules apply, and how recruitment messaging is framed. Pick the format during study setup; you can amend it later if your protocol changes.
+Every study has a delivery model: **site-based**, **virtual**, or **hybrid**. You choose it when you create the study, and it locks permanently the moment the study leaves draft — it can't be changed afterward.
 
 <Tabs>
-  <Tab title="Standard In-Person">
-    **Use case:** Volunteers must visit a physical site for screening, dosing, assessments, or all visits.
-
-    **Matching behavior:** The platform matches by both eligibility and geography, then assigns the volunteer to the nearest participating site that is within the site's defined catchment area and behind its enrollment target.
-
-    **Typical protocol shape:** Site-based visits, on-site labs, in-clinic assessments. Recruitment messaging emphasizes location and convenience.
+  <Tab title="Site-Based">
+    The default. Volunteers are expected to visit a physical site.
+  </Tab>
+  <Tab title="Virtual">
+    No physical site visits. A virtual study is never assigned any sites.
   </Tab>
   <Tab title="Hybrid">
-    **Use case:** A mix of in-person and remote activities. Some visits happen on-site, others by phone or video.
-
-    **Matching behavior:** Similar to standard in-person: the platform uses site-level geography and enrollment targets to route volunteers. The hybrid label is surfaced in recruitment materials so volunteers understand the expected commitment before they express interest.
-
-    **Typical protocol shape:** Baseline and endpoint on-site, interim follow-ups remote. Useful for reducing travel burden while retaining physical assessments.
-  </Tab>
-  <Tab title="Fully Virtual / Decentralized">
-    **Use case:** No physical site visits required. All activities, including consent, screening, and data collection, happen remotely.
-
-    **Matching behavior:** The platform matches by eligibility and recruitment area (statewide or nationwide), but does not assign volunteers to a specific site. Instead, the volunteer is connected to the study's central coordination team or to the nearest virtual-capable site for administrative purposes.
-
-    **Typical protocol shape:** eConsent, telehealth visits, home-based assessments, direct-to-patient shipping. Geography is used for time-zone and licensing alignment rather than travel distance.
-  </Tab>
-  <Tab title="Survey">
-    **Use case:** Observational or registry studies that require only questionnaire completion, often with no clinical intervention.
-
-    **Matching behavior:** The platform screens for eligibility and routes the volunteer to the survey instrument. Site assignment is optional; if sites are involved, they are selected by administrative load rather than proximity.
-
-    **Typical protocol shape:** Online questionnaires, occasional follow-up surveys, minimal or no clinical contact. Fastest to launch and often the widest geographic scope.
+    A mix of in-person and remote activity. For nearly every practical purpose, a hybrid study behaves the same as a site-based one — for example, volunteers still see a Sites section on the study's volunteer-facing page, unlike a virtual study.
   </Tab>
 </Tabs>
 
-## Changing Format Mid-Study
+## What the format actually controls
 
-If your protocol is amended, you can switch the study format from your study settings. The platform updates matching behavior and recruitment messaging automatically. Volunteers who were already matched under the prior format remain in their current assignment unless you manually reassign them.
+It's narrower than the three labels might suggest:
+
+- **Whether volunteers see a Sites section** on your study's page. Hidden only for virtual studies — hybrid is treated the same as site-based here.
+- **A setup-wizard checklist indicator** showing whether you still need to assign a site. This is just a visual reminder and doesn't by itself block you from launching.
+
+**What actually determines whether a lead gets scheduled through a site has nothing to do with the format label.** It comes down to whether you've assigned at least one site to the study:
+
+- If you have assigned sites, leads route to one of them (and can be scheduled there, once that site has scheduling turned on and working).
+- If you haven't assigned any sites — whether because the study is virtual by design, or because it's a site-based/hybrid study that just hasn't had a site attached yet — leads are created without a site and aren't automatically scheduled. You (or the volunteer, if more than one site is available) can assign or choose a site later.
+
+In other words: a site-based study with no sites yet behaves identically, in practice, to a virtual study — until you add one.
+
+## Setting it up
+
+Pick the delivery model when you create your study, on the Basic Information step. Since it locks the moment you launch, confirm it's right before you go live.

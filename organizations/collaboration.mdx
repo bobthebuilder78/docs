@@ -1,22 +1,26 @@
 ---
-title: "Collaborate with CROs, Sponsors, and Partner Sites"
+title: "Collaborate with Other Organizations on a Study"
 sidebarTitle: "Collaboration"
-description: "Invite external collaborators with scoped access. Ownership and billing stay with your organization."
+description: "Invite another organization to a study at a scoped tier. Ownership and billing always stay with the organization that owns the study."
 ---
 
-A study always has exactly one owning organization. Any other organization's access to it comes from being invited as a collaborator at a specific tier. This is how a sponsor works with a CRO, how a research organization brings in an individual site, or how a network of clinics runs shared studies while each clinic keeps its own team and its own login.
+A study always has exactly one owning organization. Any other organization's access to it comes from being invited as a collaborator at a specific tier. This is how a sponsor works with a CRO, how a research organization brings in an individual site, or how several independently-run clinics each work leads on studies owned by a central organization — while every organization involved keeps its own separate team and login.
 
-Ownership itself never splits. Collaborators work within the tier they're given, and only ownership can transfer the study to a new organization outright (see below).
+Ownership itself never splits. Collaborators work within the tier they're given, and only a full ownership transfer moves the study to a new organization.
 
-## The three collaboration tiers
+## The four tiers
 
-<CardGroup cols={3}>
+<CardGroup cols={2}>
+  <Card title="Owner" icon="crown">
+    The organization the study belongs to. Full control, plus the only tier that can remove a collaborator, withdraw a pending invite, or accept an ownership transfer. Billing always follows the owner.
+  </Card>
+
   <Card title="Manager" icon="pen-to-square">
-    Can edit study setup, assign their own sites to the study, work leads, and invite further collaborators. This is close to full parity with the owner, short of ownership itself.
+    Everything Recruiter can do, plus can edit study setup, assign their own sites to the study, and invite further collaborators. Close to full parity with the owner, short of ownership itself.
   </Card>
 
   <Card title="Recruiter" icon="users">
-    Can work leads: update lead status, book and reschedule visits, add notes. Cannot touch study setup, sites, or anything else.
+    Can work leads: update lead status, book and reschedule visits, reassign a lead's site, add notes. Cannot touch study setup, sites, or invite anyone else.
   </Card>
 
   <Card title="Viewer" icon="eye">
@@ -25,10 +29,10 @@ Ownership itself never splits. Collaborators work within the tier they're given,
 </CardGroup>
 
 <Note>
-  A tier caps the whole collaborating organization, not just one person. If your organization is invited at Recruiter tier, nobody there can edit study setup, not even their own Organization Admin. See [Roles & Permissions](organizations/roles-permissions) for how this combines with a person's own role at their organization.
+  A tier caps the whole collaborating organization, not just one person. If your organization is invited at Recruiter tier, nobody there can edit study setup — not even their own Organization Admin. See [Roles & Permissions](/organizations/roles-permissions) for how this combines with a person's own role at their organization; the lower of the two always applies.
 </Note>
 
-There's no "Admin collaborator" tier. Even Manager tier doesn't grant ownership: a manager-tier collaborator can invite other organizations to the study, but can't remove a collaborator, withdraw a pending invite, or accept an ownership transfer. Those stay owner-only.
+## Inviting a collaborator
 
 <Steps>
   <Step title="Open the study">
@@ -38,46 +42,24 @@ There's no "Admin collaborator" tier. Even Manager tier doesn't grant ownership:
     Search for the organization you want to invite. They need an existing Jaspari Studies account.
   </Step>
   <Step title="Pick a tier">
-    Choose Manager, Recruiter, or Viewer.
+    Choose Manager, Recruiter, or Viewer. (Owner can't be assigned this way — it only moves through an ownership transfer, below.)
   </Step>
   <Step title="Send it">
     The invitation is valid for 14 days. The invited organization's admin has to accept it before their team gets access. If it isn't accepted in time, it expires and can be re-sent.
   </Step>
 </Steps>
 
-Jaspari Studies makes it easy to bring CROs, sponsors, and partner sites into your recruitment workflow without giving up control. You invite collaborators, assign them a scoped role, and they see only the studies and data you choose. Your organization retains full ownership of the studies and full responsibility for billing.
+To invite a collaborator, your own organization must own the study or already hold Manager tier on it — a Recruiter- or Viewer-tier collaborator can't invite further collaborators.
 
-## Who You Can Invite
+## Billing always stays with the owner
 
-<CardGroup cols={2}>
-  <Card title="CROs" icon="handshake">
-    Contract research organizations can help manage recruitment, review screening data, and coordinate with sites. Give them study-scoped or site-scoped access depending on their role.
-  </Card>
-
-  <Card title="Sponsors" icon="chart-line">
-    Sponsor representatives can monitor enrollment progress and spend in real time. They receive read-only access by default so they can track performance without changing study settings.
-  </Card>
-
-  <Card title="Partner Sites" icon="hospital">
-    Collaborating clinics or research sites can run their portion of a study while you maintain central oversight. Scope their access to the sites they operate.
-  </Card>
-
-  <Card title="Legal & Compliance Reviewers" icon="scale">
-    External reviewers can inspect consent language, IRB submissions, and audit logs. Assign read-only, study-scoped access so they can verify compliance without touching recruitment operations.
-  </Card>
-</CardGroup>
-
-You can remove a collaborating organization from the study at any time. Removing them ends their team's access to it immediately, including any leads they were working.
-
-## Ownership and Billing Billing always stays with the owner
-
-The owning organization is billed for the study. This never changes based on how many organizations collaborate on it or which tier they hold. A Viewer-tier sponsor watching enrollment progress, a Recruiter-tier site working leads day to day, a Manager-tier CRO editing eligibility criteria: none of it moves the bill off the owner's account.
+The owning organization is billed for the study. This never changes based on how many organizations collaborate on it or which tier they hold. A Viewer-tier sponsor watching enrollment progress, a Recruiter-tier clinic working leads day to day, a Manager-tier CRO editing eligibility criteria: none of it moves the bill off the owner's account. A collaborating organization's own billing settings show no invoices or charges for a study it doesn't own, regardless of tier.
 
 The only way billing responsibility moves to a different organization is a full ownership transfer.
 
 ## Transferring ownership
 
-Sometimes a study genuinely needs to change hands, not just gain a collaborator. For example, a CRO that set up a study on a sponsor's behalf might need to hand it fully to the sponsor once the sponsor is ready to run it directly.
+Sometimes a study needs to change hands entirely, not just gain a collaborator — for example, a CRO that set up a study on a sponsor's behalf handing it fully to the sponsor once they're ready to run it directly.
 
 <Steps>
   <Step title="Invite first">
@@ -87,25 +69,23 @@ Sometimes a study genuinely needs to change hands, not just gain a collaborator.
     Only the current owner's admin can propose it, and only to that already-invited collaborator.
   </Step>
   <Step title="The new owner accepts">
-    Only their own admin can accept, and their organization needs a saved payment method on file first.
+    Only their own admin can accept, and their organization needs a saved payment method and a wallet balance that clears their organization's deposit minimum first.
   </Step>
   <Step title="Ownership moves">
-    Once accepted, billing and study ownership move together to the new organization. The old owner keeps access, demoted to Manager tier, unless it was a placeholder organization with no real team, in which case its access is removed entirely.
+    Once accepted, billing and study ownership move together to the new organization. The old owner keeps access, demoted to Manager tier — unless it was a placeholder organization with no real team, in which case its access is removed entirely.
   </Step>
 </Steps>
 
 Either side can cancel a pending transfer before it's accepted.
 
-## When several sites collaborate on one owner's studies
+## Removing a collaborator
 
-A common shape: one organization owns and runs a set of studies, and several separately-run clinics each collaborate on those studies, usually at Manager or Recruiter tier. Each clinic keeps its own team, its own roles, and its own separate sites. The clinic isn't billed for the studies it collaborates on. It works leads and (at Manager tier) helps manage study setup, and the owning organization keeps billing and final control the whole time.
+Only the owning organization's admin can remove a collaborator — this is stricter than inviting, which a Manager-tier collaborator can also do. Removing an organization cancels its in-flight visits on that study and ends its team's access immediately. It does not affect that organization's own studies, team, or anything it runs independently.
+
+## When several clinics collaborate on one owner's studies
+
+A common shape: one organization owns and runs a set of studies, and several separately-run clinics each collaborate on those studies, usually at Manager or Recruiter tier. Each clinic keeps its own team, its own roles, and its own sites. A clinic isn't billed for studies it collaborates on — it works leads and, at Manager tier, helps manage study setup, while the owning organization keeps billing and final control throughout.
 
 <Tip>
-  If you're setting this up, invite each clinic as a collaborator at the tier that matches what they need to do day to day, usually Recruiter for a clinic that only works leads, or Manager if they also need to attach their own sites to the study. There's no separate "network" account type. The owning organization's own account is the one billing resolves to.
+  Invite each clinic at the tier that matches what they need to do day to day — Recruiter for a clinic that only works leads, or Manager if they also need to attach their own sites to the study.
 </Tip>
-
-When you invite a collaborator, the study remains owned by your organization. Billing also resolves to your organization wallet, even if a CRO or partner site is actively managing recruitment. Collaborators cannot change pricing, add credits, or transfer ownership. If you need to move a study to another organization, contact your dedicated liaison or [support@jaspari.com](mailto:support@jaspari.com).
-
-## Revoking Access
-
-You can remove a collaborator at any time from the team settings page. Once access is revoked, the user immediately loses visibility into all studies and data within your organization. The revocation itself is recorded in the audit log, including the timestamp and the admin who performed the action. If the same person is re-invited later, you must assign a fresh role and scope.

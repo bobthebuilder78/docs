@@ -56,16 +56,26 @@ If a change to one of your sites invalidates an appointment that Jaspari's own b
 
 ## Email notifications
 
-From **Settings → Notifications**, you can control who on your team gets emailed and when.
+From **Settings → Notifications**, you can control who on your team gets emailed and when, for these five types:
 
 | Notification | Default | Who can receive it |
 |---|---|---|
 | New lead matched | On | Any team member with the toggle on |
-| Approaching or reached lead limit | On | Any team member with the toggle on |
+| Maximum matched leads (soft or hard limit reached) | On | Any team member with the toggle on |
 | Weekly summary | Off | Any team member with the toggle on |
 | Invoice ready | On | Organization Admin or Billing Admin |
-| Payment failed | On | Organization Admin or Billing Admin |
+| Payment failed (a manual payment attempt was declined) | On | Organization Admin or Billing Admin |
 
-New lead notifications are batched, not sent one per volunteer. The first lead after your cooldown period expires sends a digest of everything accumulated since your last email, and further leads in that window keep accumulating instead of sending immediately.
+New lead notifications are batched, not sent one per volunteer: the first lead after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating instead of sending immediately.
 
-A few notifications, account suspension and a collaborator's study being paused because its owner was suspended, always go to every affected team member. They can't be turned off, since they cover account-level status rather than a preference you'd want to silence.
+If your organization collaborates on a study rather than owning it, you can still receive new-lead and maximum-matched-leads notices for it — but only for leads you can actually see (leads at your own sites, or with no site assigned).
+
+### Notices you can't turn off
+
+A handful of notices always go to every affected team member and have no on/off toggle, because they cover account- or appointment-level status rather than a day-to-day preference:
+
+- Your organization's account being suspended.
+- A study you collaborate on being paused because its owner's account was suspended.
+- A confirmed visit being cancelled automatically because of a change at the site (hours, availability, or the site being deactivated).
+
+Several other billing notices — a failed automatic charge attempt, a billing hold beginning, retries stopping, a payment succeeding, or a hold being lifted — are sent automatically to your Organization Admin and Billing Admin and also have no toggle today.

@@ -63,15 +63,13 @@
             "pages": [
               "organizations/sites",
               "organizations/collaboration",
-              "organizations/roles-permissions",
-              "organizations/site-networks"
+              "organizations/roles-permissions"
             ]
           },
           {
             "group": "Billing",
             "pages": [
               "billing/how-pricing-works",
-              "billing/promotional-credit",
               "billing/wallet-credits"
             ]
           },
@@ -86,7 +84,6 @@
           {
             "group": "Help",
             "pages": [
-              "support/contact",
               "support/faq"
             ]
           }
