@@ -4,7 +4,7 @@ sidebarTitle: "Enrollment Goals"
 description: "A study has an informational enrollment goal for tracking, plus two study-level settings, max leads and soft limit, that actually control the flow of leads."
 ---
 
-A study has two separate things that sound similar but do different jobs: an enrollment goal, which is for your own tracking, and lead limits, which actually control the flow of leads. Both are set at the study level — there is no per-site version of either.
+A study has two separate things that sound similar but do different jobs: an enrollment goal, which is for your own tracking, and lead limits, which actually control the flow of leads. Both are set at the study level. Neither has a per-site version.
 
 ## Enrollment goal
 
@@ -16,18 +16,18 @@ These are the settings that actually gate how many leads a study receives.
 
 <CardGroup cols={2}>
   <Card title="Max leads" icon="circle-stop">
-    A hard, permanent cap on how many leads the study can ever receive. Once a study reaches its max leads, it stops receiving new leads entirely — enforced at the moment a volunteer accepts an offer, so two volunteers can't both take the last open slot.
+    A hard, permanent cap on how many leads the study can ever receive. Once a study reaches its max leads, it stops receiving new leads entirely. This is enforced at the moment a volunteer accepts an offer, so two volunteers can't both take the last open slot.
   </Card>
 
   <Card title="Soft limit" icon="triangle-exclamation">
-    An earlier checkpoint. Once a study crosses its soft limit, you get an email that new leads are winding down — a couple already on the way may still arrive.
+    An earlier checkpoint. Once a study crosses its soft limit, you get an email that new leads are winding down. A couple already on the way may still arrive.
   </Card>
 </CardGroup>
 
-If you don't set a soft limit, it falls back to your max leads. Both are editable from the study's Recruitment Goals tab at any time the study isn't ended or completed, and changes take effect immediately.
+If you don't set a soft limit, it falls back to your max leads. Both are editable from the study's Recruitment Goals tab any time the study is active, paused, or in draft, and changes take effect immediately.
 
 <Note>
-  If you set soft limit equal to max leads, you'll only get the "reached lead limit" notice — there's no separate "approaching" moment to report when the two are the same.
+  If you set soft limit equal to max leads, you'll only get the "reached lead limit" notice. There's no separate "approaching" moment to report when the two are the same.
 </Note>
 
 ## Adjusting limits mid-study
@@ -40,8 +40,8 @@ You can raise or lower max leads and soft limit at any time. Common reasons:
 
 ## Studies with more than one site
 
-Max leads and soft limit apply to the whole study, not to any one site. There is no per-site enrollment target and no automatic routing of volunteers toward under-enrolled sites. If you need enrollment concentrated at a particular site, that's managed through which sites are assigned to the study and each site's own scheduling availability — see [Sites](/organizations/sites) — not through the enrollment goal or lead limits.
+Max leads and soft limit apply to the whole study. Neither one applies to any single site. There is no per-site enrollment target and no automatic routing of volunteers toward under-enrolled sites. If you need enrollment concentrated at a particular site, manage that through which sites are assigned to the study and each site's own scheduling availability. See [Sites](/organizations/sites) for that setup.
 
 ## Virtual studies
 
-The same two settings apply: an enrollment goal for tracking, and max leads/soft limit for actual control. Since a virtual study has no sites, matching is based on recruitment area alone.
+The same two settings apply: an enrollment goal for tracking, and max leads/soft limit for actual control. A virtual study has no sites, so matching is based on recruitment area alone.

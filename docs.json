@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Jaspari Studies",
-  "theme": "sequoia",
+  "theme": "willow",
   "colors": {
-    "primary": "#100f0f",
-    "light": "#3f3b3b",
-    "dark": "#100f0f"
+    "primary": "#D2691E",
+    "light": "#E8935A",
+    "dark": "#B85C1A"
   },
   "favicon": {
     "light": "/images/android-chrome-192x192.png",
@@ -16,12 +16,7 @@
     "dark": "/images/android-chrome-192x192.png"
   },
   "navbar": {
-    "links": [],
-    "primary": {
-      "type": "button",
-      "label": "Sign Up",
-      "href": "https://studies.jaspari.com/signup"
-    }
+    "links": []
   },
   "navigation": {
     "tabs": [

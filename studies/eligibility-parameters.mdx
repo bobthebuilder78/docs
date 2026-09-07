@@ -4,37 +4,37 @@ sidebarTitle: "Parameters"
 description: "Build inclusion and exclusion criteria from conditions, medications, and structured fields like age or lab values. Learn how ordinary rules and groups combine."
 ---
 
-Jaspari Studies lets you define who qualifies for your research using conditions, medications, and structured criteria, combined with a specific set of rules for how they interact — not free-form boolean logic.
+Jaspari Studies lets you define who qualifies for your research using conditions, medications, and structured criteria, combined with a specific set of rules for how they interact. These rules follow a defined structure of their own.
 
 ## What you can build criteria from
 
-- **Conditions** — diagnosed conditions and disease history.
-- **Medications** — current or prior medication use.
-- **Structured criteria** — age, lab values, BMI, prior diagnoses, and other numeric or categorical fields, built with the eligibility rule builder.
+- **Conditions**: diagnosed conditions and disease history.
+- **Medications**: current or prior medication use.
+- **Structured criteria**: age, lab values, BMI, prior diagnoses, and other numeric or categorical fields, built with the eligibility rule builder.
 
-Each of these can be used as an inclusion rule (a volunteer must have it) or an exclusion rule (a volunteer must not have it).
+Each of these can be used as an inclusion rule (a volunteer must have it) or an exclusion rule (a volunteer must lack it).
 
 ## How rules combine
 
-This is the part worth understanding before you add rules — it isn't arbitrary boolean logic. It works like this:
+This is the part worth understanding before you add rules. It follows a specific structure:
 
 <Steps>
   <Step title="Ordinary rules of the same type mean 'any one of these'">
     Add Albuterol, Fluticasone, and Symbicort as three ordinary medication rules, with no grouping action taken, and a volunteer qualifies by being on any one of them. The same default applies to condition rules.
   </Step>
   <Step title="Group when you need more than one at once">
-    If you specifically need a volunteer on more than one item at the same time — for example both Drug A and Drug B — select those rules and choose "Group rules" then "Match ALL."
+    If you specifically need a volunteer on more than one item at the same time, both Drug A and Drug B for example, select those rules and choose "Group rules" then "Match ALL."
   </Step>
   <Step title="Exclusion rules always apply on their own">
-    Every exclusion rule stands independently, regardless of how your inclusion rules are grouped. A volunteer who meets even one exclusion rule doesn't move forward, no matter what else they match.
+    Every exclusion rule stands independently, regardless of how your inclusion rules are grouped. A volunteer who meets even one exclusion rule stays out of the pipeline, no matter what else they match.
   </Step>
   <Step title="Everything is combined together at the top level">
-    Your ungrouped medication pool, your ungrouped condition pool, any explicit groups, and your structured criteria (age, lab values, and so on) all have to pass together. A volunteer has to clear every category you've configured, not just one.
+    Your ungrouped medication pool, your ungrouped condition pool, any explicit groups, and your structured criteria (age, lab values, and so on) all have to pass together. A volunteer has to clear every category you've configured.
   </Step>
 </Steps>
 
 <Note>
-  The rule builder shows a live summary sentence describing exactly what you've configured as you add and group rules. Trust that sentence — it reflects the actual matching logic, not an approximation of it.
+  The rule builder shows a live summary sentence describing exactly what you've configured as you add and group rules. That sentence reflects the actual matching logic exactly, so trust it.
 </Note>
 
 ## Adding parameters to a study
@@ -50,18 +50,18 @@ This is the part worth understanding before you add rules — it isn't arbitrary
     For structured criteria like age or a lab value, set the range or threshold you need.
   </Step>
   <Step title="Group only if you need to require more than one item at once">
-    Otherwise, leave rules ungrouped — that already means "any one of these" for conditions and medications.
+    Otherwise, leave rules ungrouped. That already means "any one of these" for conditions and medications.
   </Step>
 </Steps>
 
 ## Changing eligibility mid-study
 
-You can update eligibility rules any time a study is in draft, active, or paused. Saving replaces your full set of rules with the new one — it isn't a partial edit, so double-check the complete rule list before saving, not just the rule you just added.
+You can update eligibility rules any time a study is in draft, active, or paused. Saving replaces your full set of rules with the new one as a complete swap rather than a partial edit, so double-check the complete rule list before saving, including anything beyond the rule you just added.
 
 <Warning>
-  Updated rules apply going forward. A volunteer with an eligibility form already open when you make a change will be evaluated against whatever rules are live at the moment they submit — not a frozen snapshot from when their form was sent.
+  Updated rules apply going forward. A volunteer with an eligibility form already open when you make a change will be evaluated against whatever rules are live at the moment they submit, current at that exact moment rather than fixed from when their form was sent.
 </Warning>
 
 ## Before you can launch
 
-Every rule group needs an explicit any-of or all-of choice set before the study can move out of draft. This is checked once, at launch, not on every subsequent save.
+Every rule group needs an explicit any-of or all-of choice set before the study can move out of draft. This check runs once, at launch.
