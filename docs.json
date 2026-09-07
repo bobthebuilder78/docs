@@ -3,9 +3,9 @@
   "name": "Jaspari Studies",
   "theme": "sequoia",
   "colors": {
-    "primary": "#10192b",
-    "light": "#B049FD",
-    "dark": "#B049FD"
+    "primary": "#100f0f",
+    "light": "#3f3b3b",
+    "dark": "#100f0f"
   },
   "favicon": {
     "light": "/images/android-chrome-192x192.png",
@@ -16,12 +16,7 @@
     "dark": "/images/android-chrome-192x192.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@jaspari.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Sign Up",
@@ -95,7 +90,15 @@
     "socials": {}
   },
   "fonts": {
-    "family": "Work Sans",
+    "family": "Open Sans",
     "weight": 400
+  },
+  "background": {
+    "color": {
+      "dark": "#282828"
+    }
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
