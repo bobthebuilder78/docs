@@ -30,7 +30,7 @@
             ]
           },
           {
-            "group": "Design Your Study",
+            "group": "Studies",
             "pages": [
               "studies/overview",
               "studies/setup-and-launch",
@@ -48,7 +48,7 @@
         "tab": "Sharing",
         "groups": [
           {
-            "group": "Teams & Organizations",
+            "group": "Sharing",
             "pages": [
               "account-setup",
               "organizations/collaboration",
