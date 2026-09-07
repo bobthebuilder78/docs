@@ -3,9 +3,9 @@
   "name": "Jaspari Studies",
   "theme": "sequoia",
   "colors": {
-    "primary": "#10192b",
-    "light": "#282828",
-    "dark": "#282828"
+    "primary": "#100f0f",
+    "light": "#3f3b3b",
+    "dark": "#100f0f"
   },
   "favicon": {
     "light": "/images/android-chrome-192x192.png",
