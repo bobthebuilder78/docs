@@ -26,6 +26,16 @@ Any open booking flow for all volunteers is released immediately, which makes th
 
 If a site loses hours, is deactivated, or has slot configuration issues, the Setup page toggle remains "on" but displays a warning, separate from the normal "on and working" and "off" states. This warning indicates that you should review the site's hours and slot configuration.
 
+## Changing a site's address
+
+Updating a site's address, city, state, or zip requires the new address to pass verification before it saves. This will not automatically cancel an existing appointment at that site. Both a volunteer with a confirmed appointment and one still holding an unused booking link will be texted the new address. A material address change can also update a study's price at that site, since your recruitment area's population may have changed. See [Auto-Scheduling Visits](/studies/auto-scheduling).
+
+## Changing a site's hours, slot settings, or time zone
+
+Unlike an address change, editing a site's hours, appointment slot length/capacity, or time zone can invalidate appointments that are still Confirmed by Jaspari, if the appointment no longer falls within the new hours or no longer fits the new slot grid. There's a 3-hour grace period before anything is actually cancelled, so a quick correction never reaches a volunteer, unless the appointment is happening within the next 4 hours, in which case it's resolved immediately.
+
+Only a change to slot length or capacity shows you a preview of how many appointments would be affected before you confirm it. Hours and time zone changes take effect immediately with no upfront preview. See [Auto-Scheduling Visits](/studies/auto-scheduling) for exactly what happens to an affected appointment.
+
 ## Removing a site from an active study
 
 If your recruitment area is defined by radius around your sites, you can't remove the last site from a live study, since it would leave no measurable recruitment area. Add a replacement site first, or switch your recruitment area type before removing the last one.
