@@ -10,19 +10,19 @@ Every person on your team gets one of five roles. The role controls what they ca
 
 <CardGroup cols={2}>
   <Card title="Organization Admin" icon="shield-check">
-    Full access. The only role that can manage the team, billing, organization settings, and study ownership. Every organization needs at least one.
+    Full access. The only role that can manage the team, billing, organization settings, and study ownership. Every organization must have exactly one organization admin. The organization admin may alter their [Visibility](/compliance/volunteer-data-visibility) set to anonymized or none, if needed.
   </Card>
 
   <Card title="Organization Manager" icon="pen-to-square">
-    Runs studies and sites day to day. Can create and edit studies, launch/pause/end them, share a study with another organization, manage sites, and work leads. Cannot touch billing, organization settings, team management, or study ownership.
+    Runs studies and sites day to day. Can create and edit studies, launch/pause/end them, share a study with another organization, manage sites, and work volunteers. Cannot touch billing, organization settings, team management, or study ownership.
   </Card>
 
   <Card title="Team Member" icon="user">
-    Works the recruitment pipeline. Can update a lead's status, add notes and follow-ups, book and reschedule visits, reassign a lead to a different site, add a lead manually, and submit corrections to volunteer details for verification. Cannot change any study, site, billing, or organization setting.
+    Works the recruitment pipeline. Can update a volunteer's status, add notes and follow-ups, book and reschedule visits, reassign a volunteer to a different site, add a volunteer manually, and submit corrections to volunteer details for verification. Cannot change any study, site, billing, or organization setting.
   </Card>
 
   <Card title="Billing Admin" icon="credit-card">
-    Sees everything, and additionally handles money: invoices, payment methods, wallet deposits, payments. Cannot change a lead, a study, a site, or organization settings. This is a separate capability track that runs alongside the operational roles.
+    Sees everything, and additionally handles money: invoices, payment methods, wallet deposits, payments. Cannot change a volunteer's status, a study, a site, or organization settings. Billing admins should have their [Visibility](/compliance/volunteer-data-visibility) set to anonymized for auditting or none.
   </Card>
 </CardGroup>
 
@@ -68,12 +68,12 @@ If another organization shares a study with you, your team members' access to th
 There are four collaboration tiers an organization can hold on a shared study:
 
 - **Owner**: the organization the study belongs to.
-- **Manager tier**: your Organization Admins and Managers can edit study setup and work leads. Your Team Members can still only work leads.
+- **Manager tier**: your Organization Admins and Managers can edit study setup and work volunteers. Your Team Members can still only work volunteers.
 - **Recruiter tier**: everyone at your organization, including your Organization Admin, is limited to handling volunteer statuses or adding to their pages (or viewing, depending on their own role).
 - **Viewer tier**: everyone at your organization can view the study, but nobody can make changes.
 
 <Note>
-  If your organization is invited at Recruiter tier, your Organization Admin is limited to working leads on that study, the same as everyone else at your organization. The tier caps the whole organization, regardless of individual role.
+  If your organization is invited at Recruiter tier, your Organization Admin is limited to working volunteers on that study, the same as everyone else at your organization. The tier caps the whole organization, regardless of individual role.
 </Note>
 
 Your own sites, your own organization settings, and your own billing stay governed entirely by your team members' roles at your own organization. A collaboration tier on someone else's study has no bearing on any of it.

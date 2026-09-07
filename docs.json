@@ -26,7 +26,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "quickstart"
+              "getting-started/quickstart"
             ]
           },
           {
@@ -51,10 +51,10 @@
           {
             "group": "Sharing",
             "pages": [
-              "account-setup",
-              "organizations/collaboration",
-              "organizations/sites",
-              "organizations/roles-permissions"
+              "sharing/account-setup",
+              "sharing/collaboration",
+              "sharing/sites",
+              "sharing/roles-permissions"
             ]
           }
         ]
@@ -93,8 +93,8 @@
           {
             "group": "Help",
             "pages": [
-              "support/platform-representative",
-              "support/technical-support"
+              "help/platform-representative",
+              "help/technical-support"
             ]
           }
         ]
@@ -114,5 +114,35 @@
   },
   "icons": {
     "library": "lucide"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/quickstart",
+      "destination": "/getting-started/quickstart"
+    },
+    {
+      "source": "/account-setup",
+      "destination": "/sharing/account-setup"
+    },
+    {
+      "source": "/organizations/collaboration",
+      "destination": "/sharing/collaboration"
+    },
+    {
+      "source": "/organizations/sites",
+      "destination": "/sharing/sites"
+    },
+    {
+      "source": "/organizations/roles-permissions",
+      "destination": "/sharing/roles-permissions"
+    },
+    {
+      "source": "/support/platform-representative",
+      "destination": "/help/platform-representative"
+    },
+    {
+      "source": "/support/technical-support",
+      "destination": "/help/technical-support"
+    }
+  ]
 }
