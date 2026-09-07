@@ -46,13 +46,13 @@ Click into any lead and use the status dropdown to move them between statuses. T
 
 If you use Jaspari's scheduling feature, a few statuses in the Scheduled group behave automatically:
 
-- **Confirmation Pending** — a scheduling link has gone out and we're waiting for the volunteer to pick a time.
-- **Confirmed by Jaspari** — the volunteer booked through their own link.
-- **Confirmed by Staff** — your team confirmed the visit manually, a front-desk confirmation right before the appointment, or a visit your staff booked by hand.
+- **Confirmation Pending**: a scheduling link has gone out and we're waiting for the volunteer to pick a time.
+- **Confirmed by Jaspari**: the volunteer booked through their own link.
+- **Confirmed by Staff**: your team confirmed the visit manually, a front-desk confirmation right before the appointment, or a visit your staff booked by hand.
 
-Once your staff sets a status manually on a lead, or books their visit directly, we treat that lead as staff-managed from then on and won't make further automatic status changes on it.
+Once your staff sets a status manually on a lead, or books their visit directly, we treat that lead as staff-managed from then on, leaving further automatic status changes to your team.
 
-If a change to one of your sites invalidates an appointment that Jaspari's own booking flow confirmed, that appointment is cancelled automatically and the volunteer is notified. If your staff confirmed or booked it instead, this automatic cancellation doesn't apply. You'll need to handle the reschedule directly, since we have no way to know if you've already handled it another way.
+If a change to one of your sites invalidates an appointment that Jaspari's own booking flow confirmed, that appointment is cancelled automatically and the volunteer is notified. Appointments your staff confirmed or booked stay in your hands for the reschedule, since we have no way to know if you've already handled it another way.
 
 ## Email notifications
 
@@ -66,16 +66,16 @@ From **Settings → Notifications**, you can control who on your team gets email
 | Invoice ready | On | Organization Admin or Billing Admin |
 | Payment failed (a manual payment attempt was declined) | On | Organization Admin or Billing Admin |
 
-New lead notifications are batched, not sent one per volunteer: the first lead after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating instead of sending immediately.
+New lead notifications arrive as a batched digest rather than one email per volunteer. The first lead after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating for the next digest.
 
-If your organization collaborates on a study rather than owning it, you can still receive new-lead and maximum-matched-leads notices for it — but only for leads you can actually see (leads at your own sites, or with no site assigned).
+If your organization collaborates on a study rather than owning it, you can still receive new-lead and maximum-matched-leads notices for it, limited to leads you can actually see (leads at your own sites, or with no site assigned).
 
 ### Notices you can't turn off
 
-A handful of notices always go to every affected team member and have no on/off toggle, because they cover account- or appointment-level status rather than a day-to-day preference:
+A handful of notices always go to every affected team member with no on/off toggle, because they cover account- or appointment-level status rather than a day-to-day preference:
 
 - Your organization's account being suspended.
 - A study you collaborate on being paused because its owner's account was suspended.
 - A confirmed visit being cancelled automatically because of a change at the site (hours, availability, or the site being deactivated).
 
-Several other billing notices — a failed automatic charge attempt, a billing hold beginning, retries stopping, a payment succeeding, or a hold being lifted — are sent automatically to your Organization Admin and Billing Admin and also have no toggle today.
+Several other billing notices, including a failed automatic charge attempt, a billing hold beginning, retries stopping, a payment succeeding, or a hold being lifted, are sent automatically to your Organization Admin and Billing Admin, also with no toggle today.
