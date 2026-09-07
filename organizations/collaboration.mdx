@@ -1,0 +1,91 @@
+---
+title: "Collaborate with Other Organizations on a Study"
+sidebarTitle: "Organization Collaboration"
+description: "Invite another organization to a study at a scoped tier. Ownership and billing always stay with the organization that owns the study."
+---
+
+A study always has exactly one owning organization. Any other organization accesses it as a collaborator at a specific tier. This model supports sponsor-CRO partnerships, research organizations with multiple sites, and network models where independent clinics work on studies owned by a central organization, with each organization maintaining separate teams and access.
+
+Ownership does not split between organizations. Collaborators operate within their assigned tier, and ownership transfers only through an explicit ownership transfer process.
+
+## The four tiers
+
+<CardGroup cols={2}>
+  <Card title="Owner" icon="crown">
+    The organization the study belongs to. Full control, plus the only tier that can remove a collaborator, withdraw a pending invite, or accept an ownership transfer. Billing always follows the owner.
+  </Card>
+
+  <Card title="Manager" icon="align-vertical-distribute-center">
+    Can work volunteers and edit study setup. Can assign their own sites to the study and invite additional collaborators. Cannot transfer ownership or remove collaborators.
+  </Card>
+
+  <Card title="Recruiter" icon="users">
+    Can work volunteers: update volunteer status, book and reschedule visits, reassign a volunteer's site, add notes. Cannot touch study setup, sites, or invite anyone else.
+  </Card>
+
+  <Card title="Viewer" icon="eye">
+    Read-only. Can see the study, its volunteers, and its collaborators. Cannot change anything.
+  </Card>
+</CardGroup>
+
+<Note>
+  A tier caps the whole collaborating organization, all of it, not one person within it. If your organization is invited at Recruiter tier, nobody there can edit study setup, including their own Organization Admin. See [Roles & Permissions](/organizations/roles-permissions) for how this combines with a person's own role at their organization; the lower of the two always applies.
+</Note>
+
+## Inviting a collaborator
+
+<Steps>
+  <Step title="Open the study">
+    Go to the study you want to share, from your studies list.
+  </Step>
+  <Step title="Share the study">
+    Search for the organization you want to invite. They must have an existing account on the Studies Platform.
+  </Step>
+  <Step title="Pick a tier">
+    Choose Manager, Recruiter, or Viewer. Owner tier only moves through an ownership transfer, described below.
+  </Step>
+  <Step title="Send it">
+    The invitation is valid for 14 days. The invited organization's admin has to accept it before their team gets access. If it isn't accepted in time, it expires and can be re-sent.
+  </Step>
+</Steps>
+
+To invite a collaborator, your own organization must own the study or already hold Manager tier on it. Recruiter- and Viewer-tier collaborators cannot invite further collaborators.
+
+## Billing always stays with the owner
+
+The owning organization is billed for the study. This never changes based on how many organizations collaborate on it or which tier they hold. A Viewer-tier sponsor watching enrollment progress, a Recruiter-tier clinic working volunteers day to day, a Manager-tier CRO editing eligibility criteria: all of them leave the bill with the owner's account. A collaborating organization's own billing settings show no invoices or charges for a study it doesn't own, regardless of tier.
+
+The only way billing responsibility moves to a different organization is a full ownership transfer.
+
+## Transferring ownership
+
+Sometimes a study needs to change hands entirely. A CRO that set up a study on a sponsor's behalf might hand it fully to the sponsor once they're ready to run it directly, for example.
+
+<Steps>
+  <Step title="Invite first">
+    The target organization has to already be an active collaborator on the study. Transferring ownership requires that existing collaboration.
+  </Step>
+  <Step title="Propose the transfer">
+    Only the current owner's admin can propose it, and only to that already-invited collaborator.
+  </Step>
+  <Step title="The new owner accepts">
+    Only their organization's admin can accept the transfer. The organization must have a saved payment method and sufficient wallet balance to meet the deposit minimum.
+  </Step>
+  <Step title="Ownership moves">
+    Once accepted, billing and study ownership transfer to the new organization. The previous owner retains access at Manager tier.
+  </Step>
+</Steps>
+
+Either side can cancel a pending transfer before it's accepted.
+
+## Removing a collaborator
+
+Only the owning organization's admin can remove a collaborator. This is stricter than inviting, which a Manager-tier collaborator can also do. Removing an organization cancels its in-flight visits on that study and ends its team's access immediately, while leaving that organization's own studies, team, and independent work untouched.
+
+## Multiple clinics collaborating on a central organization's studies
+
+One organization owns and manages studies, with multiple independent clinics collaborating on them at Manager or Recruiter tier. Each clinic maintains its own team, roles, and sites. At Manager tier, clinics help manage study setup and work volunteers. The owning organization retains billing responsibility and final control.
+
+<Tip>
+  Invite each clinic at the tier that matches what they need to do day to day. Recruiter tier fits a clinic that only works volunteers; Manager tier fits one that also needs to attach its own sites to the study.
+</Tip>
