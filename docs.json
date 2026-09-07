@@ -51,8 +51,8 @@
             "group": "Teams & Organizations",
             "pages": [
               "account-setup",
-              "organizations/sites",
               "organizations/collaboration",
+              "organizations/sites",
               "organizations/roles-permissions"
             ]
           }
