@@ -4,9 +4,9 @@ sidebarTitle: "Collaboration"
 description: "Invite another organization to a study at a scoped tier. Ownership and billing always stay with the organization that owns the study."
 ---
 
-A study always has exactly one owning organization. Any other organization's access to it comes from being invited as a collaborator at a specific tier. This is how a sponsor works with a CRO, how a research organization brings in an individual site, or how several independently-run clinics each work leads on studies owned by a central organization, all while every organization involved keeps its own separate team and login.
+A study always has exactly one owning organization. Any other organization accesses it as a collaborator at a specific tier. This model supports sponsor-CRO partnerships, research organizations with multiple sites, and network models where independent clinics work on studies owned by a central organization, with each organization maintaining separate teams and access.
 
-Ownership itself never splits. Collaborators work within the tier they're given, and only a full ownership transfer moves the study to a new organization.
+Ownership does not split between organizations. Collaborators operate within their assigned tier, and ownership transfers only through an explicit ownership transfer process.
 
 ## The four tiers
 
@@ -16,7 +16,7 @@ Ownership itself never splits. Collaborators work within the tier they're given,
   </Card>
 
   <Card title="Manager" icon="pen-to-square">
-    Everything Recruiter can do, plus can edit study setup, assign their own sites to the study, and invite further collaborators. Close to full parity with the owner, short of ownership itself.
+    Can work leads and edit study setup. Can assign their own sites to the study and invite additional collaborators. Cannot transfer ownership or remove collaborators.
   </Card>
 
   <Card title="Recruiter" icon="users">
@@ -39,7 +39,7 @@ Ownership itself never splits. Collaborators work within the tier they're given,
     Go to the study you want to share, from your studies list.
   </Step>
   <Step title="Share the study">
-    Search for the organization you want to invite. They need an existing Jaspari Studies account.
+    Search for the organization you want to invite. They must have an existing account on the Studies Platform.
   </Step>
   <Step title="Pick a tier">
     Choose Manager, Recruiter, or Viewer. Owner tier only moves through an ownership transfer, described below.
@@ -69,10 +69,10 @@ Sometimes a study needs to change hands entirely. A CRO that set up a study on a
     Only the current owner's admin can propose it, and only to that already-invited collaborator.
   </Step>
   <Step title="The new owner accepts">
-    Only their own admin can accept, and their organization needs a saved payment method and a wallet balance that clears their organization's deposit minimum first.
+    Only their organization's admin can accept the transfer. The organization must have a saved payment method and sufficient wallet balance to meet the deposit minimum.
   </Step>
   <Step title="Ownership moves">
-    Once accepted, billing and study ownership move together to the new organization. The old owner keeps access, demoted to Manager tier. A placeholder organization with no real team loses access entirely instead.
+    Once accepted, billing and study ownership transfer to the new organization. The previous owner retains access at Manager tier.
   </Step>
 </Steps>
 
@@ -82,9 +82,9 @@ Either side can cancel a pending transfer before it's accepted.
 
 Only the owning organization's admin can remove a collaborator. This is stricter than inviting, which a Manager-tier collaborator can also do. Removing an organization cancels its in-flight visits on that study and ends its team's access immediately, while leaving that organization's own studies, team, and independent work untouched.
 
-## When several clinics collaborate on one owner's studies
+## Multiple clinics collaborating on a central organization's studies
 
-A common shape: one organization owns and runs a set of studies, and several separately-run clinics each collaborate on those studies, usually at Manager or Recruiter tier. Each clinic keeps its own team, its own roles, and its own sites. A clinic works leads and, at Manager tier, helps manage study setup, while the owning organization keeps billing and final control throughout.
+One organization owns and manages studies, with multiple independent clinics collaborating on them at Manager or Recruiter tier. Each clinic maintains its own team, roles, and sites. At Manager tier, clinics help manage study setup and work leads. The owning organization retains billing responsibility and final control.
 
 <Tip>
   Invite each clinic at the tier that matches what they need to do day to day. Recruiter tier fits a clinic that only works leads; Manager tier fits one that also needs to attach its own sites to the study.

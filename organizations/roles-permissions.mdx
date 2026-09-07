@@ -1,5 +1,5 @@
 ---
-title: "Manage Team Roles and Access Scope"
+title: "Roles and Permissions"
 sidebarTitle: "Roles & Permissions"
 description: "Five organization roles control what a team member can do. Access scope can further narrow which studies and sites they see. Both combine with any collaboration tier your organization holds on a shared study."
 ---
@@ -81,3 +81,23 @@ Your own sites, your own organization settings, and your own billing stay govern
 <Tip>
   See [Collaboration](/organizations/collaboration) for how sharing a study works, including ownership transfer and removing a collaborator.
 </Tip>
+
+## Volunteer data visibility
+
+Every team member gets a visibility level that controls which fields they see on volunteer records. This is separate from roles and access scope. Someone might be able to reach a volunteer's record but only see anonymized data, depending on their visibility setting.
+
+### The three visibility levels
+
+**Full visibility** shows everything: names, contact information, date of birth, notes, and local details.
+
+**Anonymized visibility** hides direct identifiers. First names, last names, phone numbers, email addresses, and full dates of birth are not shown. Age still displays, calculated from the date of birth. Volunteers are identified by their system ID. Status notes and site-specific local details are also hidden.
+
+**No visibility** blocks access to volunteer records entirely. The team member cannot see volunteer lists, detail pages, or visit records.
+
+### Who controls visibility
+
+Organization Admins set the default visibility level when inviting a team member or editing their profile. Any team member can lower their own visibility at any time, but only an Organization Admin can raise it back up.
+
+When your organization collaborates on another organization's study, you can also set visibility on a per-study basis. This lets you give someone anonymized access by default but full access to one specific study, for example.
+
+Visibility works independently. A Team Member with anonymized visibility still cannot edit a study setup, even if they're granted access to the study. Their role prevents that. Visibility only controls what data they see, not what they can change.

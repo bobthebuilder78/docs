@@ -19,7 +19,7 @@ Every lead in your portal has exactly one status at a time, organized into nine 
     Passed initial contact, being reviewed before scheduling a visit: Pending Review, Ready to Schedule, No Longer Eligible, Miscellaneous.
   </Accordion>
   <Accordion title="Scheduled">
-    An appointment exists in some state: Pending Visit, Confirmation Pending, Confirmed by Jaspari, Confirmed by Staff, Rescheduling, Rescheduled, Cancelled, No Show, Miscellaneous.
+    An appointment exists in some state: Pending Visit, Confirmation Pending, Confirmed Automatically, Confirmed by Staff, Rescheduling, Rescheduled, Cancelled, No Show, Miscellaneous.
   </Accordion>
   <Accordion title="Visits">
     A screening visit, virtual screening, labs, or investigator review has occurred: Checked In, Screening In Progress, Screening Complete, Awaiting Results, Screening Failed, Miscellaneous.
@@ -44,15 +44,15 @@ Click into any lead and use the status dropdown to move them between statuses. T
 
 ## Scheduled visits
 
-If you use Jaspari's scheduling feature, a few statuses in the Scheduled group behave automatically:
+When scheduling is enabled, several statuses in the Scheduled group update automatically:
 
 - **Confirmation Pending**: a scheduling link has gone out and we're waiting for the volunteer to pick a time.
-- **Confirmed by Jaspari**: the volunteer booked through their own link.
+- **Confirmed Automatically**: the volunteer completed their booking through the automated system.
 - **Confirmed by Staff**: your team confirmed the visit manually, a front-desk confirmation right before the appointment, or a visit your staff booked by hand.
 
-Once your staff sets a status manually on a lead, or books their visit directly, we treat that lead as staff-managed from then on, leaving further automatic status changes to your team.
+Once your staff sets a status manually on a lead or books a visit directly, that lead is treated as staff-managed. Further status changes are then controlled by your team.
 
-If a change to one of your sites invalidates an appointment that Jaspari's own booking flow confirmed, that appointment is cancelled automatically and the volunteer is notified. Appointments your staff confirmed or booked stay in your hands for the reschedule, since we have no way to know if you've already handled it another way.
+If a site change invalidates an appointment that was automatically booked, that appointment is cancelled and the volunteer is notified. Appointments confirmed or booked by your staff remain under your control for any needed rescheduling.
 
 ## Email notifications
 
@@ -68,13 +68,13 @@ From **Settings → Notifications**, you can control who on your team gets email
 
 New lead notifications arrive as a batched digest. The first lead after a 60-minute cooldown expires sends a digest of everything accumulated since your last email, and further leads within that window keep accumulating for the next digest.
 
-If your organization collaborates on a study rather than owning it, you can still receive new-lead and maximum-matched-leads notices for it, limited to leads you can actually see (leads at your own sites, or with no site assigned).
+If your organization collaborates on a study, you can receive new-lead and maximum-matched-leads notifications for leads visible to you, such as leads at your own sites or unassigned leads.
 
 ### Notices you can't turn off
 
-A handful of notices always go to every affected team member with no on/off toggle, because they cover account- or appointment-level status rather than a day-to-day preference:
+Certain notifications are always sent with no option to disable them, as they report critical account or appointment status:
 
-- A study you collaborate on being paused for reasons on the owner's side.
-- A confirmed visit being cancelled automatically because of a change at the site (hours, availability, or the site being deactivated).
+- Notification when a collaborated study is paused by its owner
+- Notification when a confirmed visit is cancelled due to site changes
 
-Several other billing notices, including a failed automatic charge attempt, a billing hold beginning, retries stopping, a payment succeeding, or a hold being lifted, are sent automatically to your Organization Admin and Billing Admin, also with no toggle today.
+Billing notifications regarding failed charges, holds, payment status, and hold resolution are sent automatically to your Organization Admin and Billing Admin.

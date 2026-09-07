@@ -1,5 +1,5 @@
 ---
-title: "Set Enrollment Goals and Lead Limits"
+title: "Enrollment Goals and Lead Limits"
 sidebarTitle: "Enrollment Goals"
 description: "A study has an informational enrollment goal for tracking, plus two study-level settings, max leads and soft limit, that actually control the flow of leads."
 ---
@@ -12,7 +12,7 @@ Enter an enrollment goal and a target completion date on the study's Recruitment
 
 ## Max leads and soft limit
 
-These are the settings that actually gate how many leads a study receives.
+These settings control how many leads a study receives.
 
 <CardGroup cols={2}>
   <Card title="Max leads" icon="circle-stop">
@@ -20,14 +20,14 @@ These are the settings that actually gate how many leads a study receives.
   </Card>
 
   <Card title="Soft limit" icon="triangle-exclamation">
-    An earlier checkpoint. Once a study crosses its soft limit, you get an email that new leads are winding down. A couple already on the way may still arrive.
+    An earlier checkpoint that triggers a notification when the study reaches it. Additional leads may still arrive briefly after crossing the soft limit.
   </Card>
 </CardGroup>
 
 If you don't set a soft limit, it falls back to your max leads. Both are editable from the study's Recruitment Goals tab any time the study is active, paused, or in draft, and changes take effect immediately.
 
 <Note>
-  If you set soft limit equal to max leads, you'll only get the "reached lead limit" notice. There's no separate "approaching" moment to report when the two are the same.
+  If soft limit equals max leads, only the "reached lead limit" notification is sent.
 </Note>
 
 ## Adjusting limits mid-study
