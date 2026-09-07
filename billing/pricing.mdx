@@ -1,22 +1,22 @@
 ---
 title: "Pricing"
 sidebarTitle: "Pricing"
-description: "Each study's per-lead price is set from a formula and locked in when you launch. You're billed only when a volunteer accepts an offer, plus a flat fee per booked visit."
+description: "Each study's per-lead price is set from a formula and locked in when you launch. "
 ---
 
-Each study gets its own price per lead, calculated from a base rate plus two surcharges: how narrow your eligibility criteria make your pool, and how tightly you've scoped your recruitment area.
+Each study gets its own pricing configuration.
 
 ## What you're actually billed for
 
 There are two billable events:
 
 <CardGroup cols={2}>
-  <Card title="A volunteer accepts your study" icon="user-check">
-    You're charged the study's price per lead the moment a volunteer accepts an offer to join your study. This is the core charge.
+  <Card title="A verified volunteer accepts your study" icon="user-check">
+    You're charged the study's unit pricing, the moment a volunteer accepts an offer to join your study. This is the core charge.
   </Card>
 
-  <Card title="A visit gets booked" icon="calendar-check">
-    If scheduling is turned on for a site and a visit is automatically booked, a separate flat scheduling fee is charged per booked appointment. This is independent of the per-lead price.
+  <Card title="A visit gets booked (optional)" icon="calendar-check">
+    If automatic scheduling is turned on for a site and a visit is automatically booked, a separate flat scheduling fee is charged per booked appointment. 
   </Card>
 </CardGroup>
 
@@ -27,32 +27,27 @@ A volunteer who accepts but never books a visit is still billed as a lead, with 
 Every study is priced one of two ways:
 
 <CardGroup cols={2}>
-  <Card title="Automatic (formula) pricing" icon="calculator">
-    The default for every study. Your per-lead price is computed by the platform's pricing formula (base rate plus the eligibility and geography surcharges below) and recalculates automatically whenever something priced-relevant about the study changes — an edit to criteria or recruitment area, or a change to one of its sites. Nothing here is set by a person.
+  <Card title="Formulaic pricing" icon="calculator">
+    This is the default for every study. Its unit pricing is computed upon setting up a study. Whenever something priced-relevant about the study changes, i.e. an edit to criteria or recruitment area, or a change to one of its sites, you will see a new price being saving this new version.
   </Card>
-  <Card title="Tailored (enterprise) pricing" icon="handshake">
-    For a study flagged as enterprise, either from the start or later, Jaspari sets a fixed per-lead price directly instead of running the formula. Once that price is set, it's permanent for the study — the formula never runs for it again, even if criteria or recruitment area change later. If no price has been set yet for a study in this state, the study simply isn't chargeable until one is.
+  <Card title="Custom pricing" icon="handshake">
+    You may choose to customize your milestones or pricing by reaching out to your platform representative to discuss your research and its milestone(s), goal(s), budget, and timeline. Custom pricing may be applied across several studies across your organization.
   </Card>
 </CardGroup>
 
-If your study has a tailored price, the pricing screen tells you so explicitly rather than showing the formula breakdown, and your number may not match what the standard formula would otherwise produce.
+<Note>
+  If your study has a custom price, the pricing screen tells you so explicitly. Your number may not match what the standard formula would otherwise produce.
+</Note>
 
 ## How the automatic (formula) price is calculated
 
-The per-lead price is made up of a base rate plus two surcharges:
-
-- **Base rate**: a starting price for every study.
-- **Eligibility-criteria surcharge**: based on how rare the combination of conditions, medications, and other inclusion or exclusion criteria you've selected is in the general population. Rarer combinations cost more to recruit for, so they carry a larger surcharge.
+- **Eligibility-criteria surcharge**: based on the combination of conditions, medications, and other inclusion or exclusion criteria you've selected is in the general population.
 - **Geography surcharge**: based on the population inside your chosen recruitment area. A smaller population, such as a tight ZIP radius, carries a larger surcharge than a large one such as statewide or nationwide coverage, since a smaller pool is harder to recruit from.
 
-## You see a price, you're billed on it
+## Locked-in pricing
 
-While a study is in draft, the price estimate you see updates live as you change eligibility criteria or recruitment area, tracking the platform's current pricing formula. The moment you launch, that number locks in permanently for the study. From then on, the price recalculates only when something about the study itself changes: an edit to its criteria or recruitment area, or a change to one of its sites (including a site's address or a site becoming inactive). A platform-wide pricing update on its own does not touch a study's already-locked price.
+While a study is in draft, the price estimate you see updates live as you change eligibility criteria or recruitment area. The moment you launch a study, that number locks in permanently for that active study. From then on, the pricing configuration is fixed and recalculates only when you change something about the study: an edit to its criteria or recruitment area, or a change to one of its sites (including a site's address or a site becoming inactive). Any platform-wide pricing update will not affect an active study's already-locked price.
 
 ## Pausing and resuming
 
-You can pause and resume a study at any time. See [Launch, Pause, and Amend a Study](/studies/launching-pausing) for how pausing affects leads already in progress. If your calculated price would cross the platform's custom-quote threshold, the estimate is hidden in favor of "contact us for a custom quote," and the study cannot go live or resume from pause until the study is priced under the threshold or a tailored price is set.
-
-<Tip>
-The pricing estimate on your study's setup page is the same number, computed the same way, that you'll actually be charged. If your study has a tailored price, the page says so explicitly.
-</Tip>
+You can pause and resume a study at any time. Upon pausing a study, its pricing is no longer locked-in. In most cases, a study that is unchanged and resumed will have its previous pricing configuration. But, if a long time has transpired since it was last active, its new pricing configuration may change. You will see any updates to pricing before you decide to resume a study. There is no surprise or hidden billing at any point.
