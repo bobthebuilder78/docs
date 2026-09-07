@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Jaspari Studies",
-  "theme": "willow",
+  "theme": "mint",
   "colors": {
-    "primary": "#7d1dd1",
-    "light": "#a15ae8",
-    "dark": "#6d1ab8"
+    "primary": "#6B3FD4",
+    "light": "#9B7EF0",
+    "dark": "#4C2A9E"
   },
   "favicon": {
     "light": "/images/android-chrome-192x192.png",
