@@ -16,7 +16,16 @@
     "dark": "/images/android-chrome-192x192.png"
   },
   "navbar": {
-    "links": []
+    "links": [
+      {
+        "href": "https://studies.jaspari.com/login",
+        "label": "Login"
+      },
+      {
+        "href": "https://studies.jaspari.com/signup",
+        "label": "Signup"
+      }
+    ]
   },
   "navigation": {
     "tabs": [
@@ -144,5 +153,16 @@
       "source": "/support/technical-support",
       "destination": "/help/technical-support"
     }
-  ]
+  ],
+  "contextual": {
+    "options": [
+      "assistant"
+    ],
+    "display": "header"
+  },
+  "api": {
+    "playground": {
+      "credentials": false
+    }
+  }
 }
