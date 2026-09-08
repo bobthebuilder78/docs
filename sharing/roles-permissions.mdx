@@ -10,7 +10,7 @@ Every person on your team gets one of five roles. The role controls what they ca
 
 <CardGroup cols={2}>
   <Card title="Organization Admin" icon="shield-check">
-    Full access. The only role that can manage the team, billing, organization settings, and study ownership. Every organization must have exactly one organization admin. The organization admin may alter their [Visibility](/compliance/volunteer-data-visibility) set to anonymized or none, if needed.
+    Full access. The only role that can manage the team, billing, organization settings, and study ownership. Every organization must have exactly one Organization Admin. The Organization Admin may alter their [Visibility](/compliance/volunteer-data-visibility) set to anonymized or none, if needed.
   </Card>
 
   <Card title="Organization Manager" icon="pen-to-square">
@@ -22,7 +22,7 @@ Every person on your team gets one of five roles. The role controls what they ca
   </Card>
 
   <Card title="Billing Admin" icon="credit-card">
-    Sees everything, and additionally handles money: invoices, payment methods, wallet deposits, payments. Cannot change a volunteer's status, a study, a site, or organization settings. Billing admins should have their [Visibility](/compliance/volunteer-data-visibility) set to anonymized for auditting or none.
+    Sees everything, and additionally handles money: invoices, payment methods, wallet deposits, payments. Cannot change a volunteer's status, a study, a site, or organization settings. Billing admins should have their [Visibility](/compliance/volunteer-data-visibility) set to anonymized for auditing or none.
   </Card>
 </CardGroup>
 
@@ -79,7 +79,7 @@ There are four collaboration tiers an organization can hold on a shared study:
 Your own sites, your own organization settings, and your own billing stay governed entirely by your team members' roles at your own organization. A collaboration tier on someone else's study has no bearing on any of it.
 
 <Tip>
-  See [Collaboration](/organizations/collaboration) for how sharing a study works, including ownership transfer and removing a collaborator.
+  See [Collaboration](/sharing/collaboration) for how sharing a study works, including ownership transfer and removing a collaborator.
 </Tip>
 
 ## Volunteer data visibility
@@ -88,16 +88,16 @@ Every team member gets a visibility level that controls which fields they see on
 
 ### The three visibility levels
 
-**Full visibility** shows everything: names, contact information, date of birth, notes, and local details.
+**Full** shows everything: names, contact information, date of birth, notes, and local details.
 
-**Anonymized visibility** hides direct identifiers. First names, last names, phone numbers, email addresses, and full dates of birth are not shown. Age still displays, calculated from the date of birth. Volunteers are identified by their system ID. Status notes and site-specific local details are also hidden.
+**Anonymized** hides direct identifiers. First names, last names, phone numbers, email addresses, and full dates of birth are not shown. Age still displays, calculated from the date of birth. Volunteers are identified by their public ID. Status notes and site-specific local details are also hidden.
 
-**No visibility** blocks access to volunteer records entirely. The team member cannot see volunteer lists, detail pages, or visit records.
+**None** blocks access to volunteer records entirely. The team member cannot see volunteer lists, detail pages, or visit records.
 
 ### Who controls visibility
 
-Organization Admins set the default visibility level when inviting a team member or editing their profile. Any team member can lower their own visibility at any time, but only an Organization Admin can raise it back up.
+Organization Admins set the default visibility level when inviting a team member or editing their profile. Any team member can lower their own visibility at any time, but only an Organization Admin can raise it back up. An Organization Admin can raise their own visibility too, unless they've turned that ability off for themselves (see [Volunteer Data Visibility](/compliance/volunteer-data-visibility) for that option).
 
 When your organization collaborates on another organization's study, you can also set visibility on a per-study basis. This lets you give someone anonymized access by default but full access to one specific study, for example.
 
-Visibility works independently. A Team Member with anonymized visibility still cannot edit a study setup, even if they're granted access to the study. Their role prevents that. Visibility only controls what data they see, but does not affect what they can or cannot change based on their role.
+Visibility mostly works independently of role. A Team Member with anonymized visibility still cannot edit a study setup, even if they're granted access to the study; their role prevents that rather than their visibility. The one exception is direct identifiers: at anonymized visibility, a person can't add or edit anything that requires entering an identifier (a status note, site-specific local details, a name/phone/email/date of birth, or adding a volunteer manually), even if their role would otherwise allow it (see [Volunteer Data Visibility](/compliance/volunteer-data-visibility) for the full list). Outside of that identifier-entry case, visibility only controls what data they see; it doesn't otherwise change what they can do based on their role.

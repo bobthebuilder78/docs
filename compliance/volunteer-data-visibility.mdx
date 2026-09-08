@@ -11,7 +11,7 @@ study), volunteer data visibility controls how much of a volunteer's record they
 ## The three levels
 
 - **Full**: all study-relevant volunteer data is visible.
-- **Anonymized**: all study-relevant volunteer data is visible except direct identifiers: first name, last name, phone, email, and full date of birth, plus status notes and Local details. The volunteer is identified by their
+- **Anonymized**: all study-relevant volunteer data is visible except direct identifiers: first name, last name, phone, email, and full date of birth, plus status notes and site-specific local details. The volunteer is identified by their
   public ID instead of their name.
 - **None**: no volunteer data is visible. Lists appear empty and the volunteer detail page is
   unavailable.
@@ -21,7 +21,7 @@ queue, scheduled visits, appointments and calendars, volunteer detail pages, sta
 entries about a volunteer.
 
 At **Anonymized**, viewing is unaffected for everything else, but adding or editing a status note, editing
-Local details, changing a name/phone/email/date of birth, and adding a volunteer manually are all blocked, since
+site-specific local details, changing a name/phone/email/date of birth, and adding a volunteer manually are all blocked, since
 those all involve entering or editing a direct identifier.
 
 ## Who sets it
@@ -30,11 +30,11 @@ Each person has a default visibility level tied to their role, set automatically
 adjustable by an Organization Admin from Team settings. An Organization Admin can also raise or lower a
 specific teammate's visibility for an individual study.
 
-Anyone, including an Organization Admin, can lower their own visibility at any time. Nobody can raise their own visibility. Raising visibility always requires an Organization Admin to do it on that person's behalf. 
+Anyone, including an Organization Admin, can lower their own visibility at any time. For everyone else, raising visibility back up always requires an Organization Admin to do it on that person's behalf. An Organization Admin can also raise their own visibility, unless they've turned that ability off for themselves.
 
 <Tip>
-  Because Organization Admins control visibility, they can optionally set their own visibility so that it is only controllable by a Platform Representative. This prevents any future changes to their own visibility, and may be necessary to comply with your organization's rules.
+  Because Organization Admins control visibility, they can optionally turn off their own ability to raise their own visibility, so that only a Platform Representative can do it for them. This prevents any future changes to their own visibility without involving Jaspari, and may be necessary to comply with your organization's rules.
 </Tip>
 
 For the full permissions model this sits alongside, see [Roles &
-Permissions](https://studies-guides.jaspari.com/organizations/roles-permissions#volunteer-data-visibility).
+Permissions](/sharing/roles-permissions#volunteer-data-visibility).

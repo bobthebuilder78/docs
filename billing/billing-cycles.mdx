@@ -22,9 +22,9 @@ See [Payment Methods](/billing/payment-methods) for how your default card is cho
 
 ## If a payment fails
 
-- The platform retries a failed charge once per business day.
-- After the second failed attempt, a **hold** takes effect: new volunteer matching pauses for your organization's studies until the balance is paid. Volunteers already in your pipeline keep moving, and your team keeps full access to the platform.
-- Automatic retries continue for up to 5 business days from the original due date. After that, the platform stops retrying automatically, but the hold remains in place, and the invoice remains open, until the balance is paid.
+- The platform retries a failed charge once per business day, for up to 5 business days total from the original due date (the original attempt counts as day 1).
+- After the second failed attempt (day 2), a **hold** takes effect: new volunteer matching pauses for your organization's studies until the balance is paid. Volunteers already in your pipeline keep moving, and your team keeps full access to the platform. Automatic retries keep running on their normal schedule even while the hold is active.
+- Once day 5 passes with the balance still unpaid, the platform stops retrying automatically, but the hold remains in place, and the invoice remains open, until the balance is paid.
 - You can clear a hold at any time by paying the invoice directly or adding funds to your wallet; studies resume normal processing automatically once it's paid.
 
 <Tip>

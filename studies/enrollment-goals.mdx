@@ -16,11 +16,11 @@ These settings control how many volunteers a study receives.
 
 <CardGroup cols={2}>
   <Card title="Max leads" icon="circle-stop">
-    A hard, permanent cap on how many volunteers the study can ever receive. Once a study reaches its max leads, it stops receiving new volunteers entirely. This is enforced at the moment a volunteer accepts an offer.
+    A hard cap on how many volunteers the study can receive. Once a study reaches its max leads, it stops receiving new volunteers entirely until you raise the cap. This is enforced at the moment a volunteer accepts an offer. Max leads is adjustable at any time; it isn't fixed once set.
   </Card>
 
   <Card title="Soft limit" icon="triangle-exclamation">
-    An earlier checkpoint that triggers a notification when the study reaches it. Additional volunteers may still arrive briefly after crossing the soft limit. To prevent volunteers from receiving offers for studies that are full, apply a soft limit.
+    An earlier checkpoint that triggers a notification when the study reaches it. Volunteers already mid-flow at the moment the soft limit is crossed are still let through, so a few more may land after the checkpoint, but the soft limit stops any new volunteer from starting after that point. Apply a soft limit below your max leads so that no one who starts is later turned away at the hard cap.
   </Card>
 </CardGroup>
 

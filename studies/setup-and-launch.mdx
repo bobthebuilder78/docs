@@ -14,7 +14,7 @@ description: "Once you've created a study, everything else happens on its Setup 
     Built through the eligibility rule builder. See [Eligibility Parameters](/studies/eligibility-parameters).
   </Step>
   <Step title="Compensation">
-    Compensation availability, total amount, and an optional itemized payment schedule. Offering compensation is not required. If you do offer compensation to volunteers, showing that compensation is available is not required. If you do choose to show volunteers that compensation is available, showing the exact compensation amount is not required.
+    Compensation availability, total amount, and an optional itemized payment schedule. Offering compensation is optional. If you do offer it, you can choose whether to display that compensation is available on the study's public page, and if you do display it, you can further choose whether to show the exact amount.
   </Step>
   <Step title="Sites">
     Assign existing sites or add new ones. This is also where you turn on volunteer self-scheduling and visit reminders, if you use them. See [Sites](/sharing/sites).
@@ -38,9 +38,9 @@ description: "Once you've created a study, everything else happens on its Setup 
 A study moves through five statuses:
 
 ```text
-draft → active ⇄ paused → ended
-                  ↓
-               complete
+draft → active ⇄ paused
+          ↓         ↓
+         ended or complete
 ```
 
 ### What stays editable after launch
@@ -50,7 +50,7 @@ draft → active ⇄ paused → ended
     Study name, study type, delivery model, phase, protocol number, and NCT number. These can only be set while the study is in draft, and lock the moment it leaves draft.
   </Card>
   <Card title="Editable through active and paused" icon="pen">
-    Sponsor name, eligibility rules, description, duration, contact info, visibility settings, scheduling fee, visit reminders, and goal-related settings. These lock upon study completion or end.
+    Sponsor name, eligibility rules, description, duration, contact info, visibility settings, visit reminders, and goal-related settings. These lock upon study completion or end.
   </Card>
 </CardGroup>
 
@@ -58,7 +58,6 @@ draft → active ⇄ paused → ended
 
 - Every eligibility rule group needs an inclusion logic choice set (any-of or all-of). You do not need eligibility rules to launch a study, however. This is best for surveys or studies aimed at the general population.
 - If your recruitment area is a radius around a site, that setup needs at least one assigned site with a radius configured. This requirement applies specifically to that one scope type.
-
 - Depending on your account, you may need an active payment method or a minimum wallet deposit on file before your first study launches. This is a one-time account-level setup.
 - If you are a covered entity, you may need to sign the Business Associate Agreement (BAA) if regulations require it for this particular study.
 - If your study's calculated price is at or above a certain threshold, launching (or resuming an edited study from pause) may require speaking to your platform representative. The pricing screen will tell you if this applies.
@@ -67,6 +66,6 @@ draft → active ⇄ paused → ended
 
 A study's delivery model mainly controls what volunteers see on its public page. Virtual studies skip the Sites section entirely, since there's nothing to show. Site-based and hybrid studies both show one.
 
-A site-based or hybrid study can still launch and run with zero sites attached, as long as its recruitment area isn't defined by radius around a site. Interested volunteers for such a study stay fully visible, and fully workable. You may assign the volunteer to a site from their volunteer page at any time.
+A site-based or hybrid study can still launch and run with zero sites attached, as long as its recruitment area isn't defined by radius around a site. Interested volunteers for such a study stay fully visible and fully workable. You may assign the volunteer to a site from their volunteer page at any time.
 
 If your recruitment area does depend on a site radius, you'll need at least one site with a radius set before you can launch.
